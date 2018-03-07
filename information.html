@@ -78,10 +78,10 @@
 
         //当前页面底部高亮
         var current_url = location.href;
-        var cut_current_url = current_url.substr(current_url.indexOf('/wisdomcloud'));
+        var cut_current_url = current_url.substr(current_url.indexOf('/zhijiaoyun'));
         $('.weui-tabbar a').each(function () {
 
-            if ($($(this))[0].href.substr(current_url.indexOf('/wisdomcloud')) == cut_current_url) {
+            if ($($(this))[0].href.substr(current_url.indexOf('/zhijiaoyun')) == cut_current_url) {
                 $('.weui-tabbar a').removeClass('weui-bar__item--on');
                 $(this).addClass('weui-bar__item--on');
             }
