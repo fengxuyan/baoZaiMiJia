@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f8685e1-8d05-4b19-a277-16e91d2e8842" name="Default" comment="修改路由前缀">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/img/banner1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/img/banner2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/img/banner3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/img/quanzi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/img/shouye.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/img/wode.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/img/xiaoxi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/img/zixun.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/personal-assistant.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/css/swiper-3.3.1.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/js/swiper.jquery.min.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/circle.html" afterPath="$PROJECT_DIR$/circle.html" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/information.html" afterPath="$PROJECT_DIR$/information.html" />
-      <change beforePath="$PROJECT_DIR$/mine.html" afterPath="$PROJECT_DIR$/mine.html" />
-      <change beforePath="$PROJECT_DIR$/news.html" afterPath="$PROJECT_DIR$/news.html" />
-      <change beforePath="$PROJECT_DIR$/src/css/jquery-weui.css" afterPath="$PROJECT_DIR$/src/css/jquery-weui.css" />
+      <change beforePath="$PROJECT_DIR$/快速复制.html" afterPath="$PROJECT_DIR$/快速复制.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,17 +24,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="399">
+              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="personal-assistant.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/personal-assistant.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="115" column="34" lean-forward="true" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -51,6 +63,9 @@
       <find>icon_nav_button</find>
       <find>.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label</find>
       <find>.swiper-pagination-bullet-active</find>
+      <find>loadFlag</find>
+      <find>mySwiper2</find>
+      <find>swiper-container2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -64,7 +79,9 @@
         <option value="$PROJECT_DIR$/news.html" />
         <option value="$PROJECT_DIR$/circle.html" />
         <option value="$PROJECT_DIR$/src/css/jquery-weui.css" />
+        <option value="$PROJECT_DIR$/快速复制.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/personal-assistant.html" />
       </list>
     </option>
   </component>
@@ -113,6 +130,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="zhijiaoyun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhijiaoyun" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhijiaoyun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhijiaoyun" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -126,11 +155,13 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/nodeJS/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\zhijiaoyun\src\img" />
       <recent name="D:\zhijiaoyun\src\js" />
+      <recent name="D:\zhijiaoyun\src\css" />
+      <recent name="D:\zhijiaoyun\src\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -159,7 +190,7 @@
       <option name="presentableId" value="Default" />
       <updated>1520387554051</updated>
       <workItem from="1520387555219" duration="285000" />
-      <workItem from="1520387855847" duration="8896000" />
+      <workItem from="1520387855847" duration="17633000" />
     </task>
     <task id="LOCAL-00001" summary="修改路由前缀">
       <created>1520387765436</created>
@@ -172,7 +203,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9181000" />
+    <option name="totallyTimeSpent" value="17918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -241,14 +272,6 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/快速复制.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-768">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -323,11 +346,31 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/快速复制.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="92" column="7" lean-forward="false" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="399">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personal-assistant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="115" column="34" lean-forward="true" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

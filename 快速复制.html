@@ -17,43 +17,44 @@
 
 <div class="weui-tab">
 
+    <!-- 首页内容 -->
     <div class="weui-tab__bd">
 
-        <!-- 首页内容 -->
-        <h1>此处修改内容</h1>
-        <!-- 首页内容 -->
+
 
     </div>
+    <!-- 首页内容 -->
+
 
     <!-- 公共底部 -->
     <div class="weui-tabbar">
-        <a href="index.html" class="weui-tabbar__item weui-bar__item--on">
+        <a href="index.html" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
-                <img src="src/images/icon_nav_button.png" alt="">
+                <img src="src/img/shouye.png" alt="">
             </div>
             <p class="weui-tabbar__label">首页</p>
         </a>
         <a href="news.html" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
-                <img src="src/images/icon_nav_msg.png" alt="">
+                <img src="src/img/xiaoxi.png" alt="">
             </div>
             <p class="weui-tabbar__label">消息</p>
         </a>
         <a href="circle.html" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
-                <img src="src/images/icon_nav_article.png" alt="">
+                <img src="src/img/quanzi.png" alt="">
             </div>
             <p class="weui-tabbar__label">圈子</p>
         </a>
         <a href="information.html" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
-                <img src="src/images/icon_nav_cell.png" alt="">
+                <img src="src/img/zixun.png" alt="">
             </div>
             <p class="weui-tabbar__label">资讯</p>
         </a>
         <a href="mine.html" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
-                <img src="src/images/icon_nav_cell.png" alt="">
+                <img src="src/img/wode.png" alt="">
             </div>
             <p class="weui-tabbar__label">我的</p>
         </a>
@@ -67,13 +68,30 @@
 <script src="src/js/jquery-2.1.4.js"></script>
 <script src="src/js/jquery-weui.min.js"></script>
 <script src="src/js/fastclick.js"></script>
+<script src="src/js/swiper.js"></script>
 <!-- 基础库文件 -->
 
 <script>
-    /* 解决移动端300毫秒延迟 */
+
     $(function () {
+
+        // 解决ios端click事件300毫秒延迟
         FastClick.attach(document.body);
+
+        //当前页面底部高亮
+        var current_url = location.href;
+        var cut_current_url = current_url.substr(current_url.indexOf('/zhijiaoyun'));
+        $('.weui-tabbar a').each(function () {
+
+            if ($($(this))[0].href.substr(current_url.indexOf('/zhijiaoyun')) == cut_current_url) {
+                $('.weui-tabbar a').removeClass('weui-bar__item--on');
+                $(this).addClass('weui-bar__item--on');
+            }
+
+        });
+
     });
+
 </script>
 
 </body>
