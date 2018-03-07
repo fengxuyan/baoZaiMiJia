@@ -835,7 +835,11 @@ body {
   position: relative;
 }
 .weui-tabbar__item.weui-bar__item--on .weui-tabbar__label {
-  color: #04BE02;
+
+
+  /*color: #04BE02; 原始样式 */
+
+  color: #FF9934; /* 修改之后的样式 */
 }
 .weui-navbar__item {
   color: #888;
@@ -1705,7 +1709,11 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #04BE02;
+  
+  /*background: #04BE02; 原始高度 */
+
+  background: #fff;  /* 修改之后的高度 */
+  
 }
 .swiper-pagination-white .swiper-pagination-bullet-active {
   background: #fff;
