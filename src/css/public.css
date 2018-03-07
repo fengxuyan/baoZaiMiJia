@@ -2,3 +2,14 @@ body, html {
     height: 100%;
     -webkit-tap-highlight-color: transparent;
 }
+
+/* tab页高度 */
+.swiper-container{
+    height: 100%;
+}
+.swiper-wrapper{
+    height: 100%;
+}
+.swiper-container2{
+    height: 100%;
+}
