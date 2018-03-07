@@ -3,8 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <title>吴老师</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="src/css/weui.min.css">
+    <link rel="stylesheet" href="src/css/jquery-weui.css">
+    <link rel="stylesheet" href="src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="src/css/public.css">
+
+    <style>
+        .tabs-title {
+            text-align: center;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #F78C3C;
+        }
+
+        .tabs-title .tabs-title-on {
+            border-bottom: 2px solid #F78C3C;
+        }
+
+        .weui-cells {
+            margin-top: 0;
+        }
+
+        .swiper-container, .swiper-container2 {
+            height: 100%;
+        }
+        .weui-grid {
+            /* position: relative; */
+            float: left;
+            padding: 0;
+            width:auto;
+            /* box-sizing: border-box; */
+        }
+
+        .weui-cell__hd img{
+            border-radius: 50%;
+        }
+        .weui-grid:before, .weui-grids:after{
+            border:0 ;
+        }
+        .weui-grid:after{
+            border:0;
+        }
+        .weui-grids:before{
+            border:0;
+        }
+
+        .weui-cell__bd{
+            font-size: 0.5rem;
+            padding-top: -10px;
+            margin-top: -10px;
+            padding-left: 0.5rem;
+        }
+        .time-box{
+            position: absolute;
+            font-size: 0.4rem;
+            bottom: 0;
+            right: 0;
+            padding-right: 1rem;
+        }
+        .weui-cell:before {
+            border-top:0 !important;
+        }
+        .weui-cell{
+            border-bottom:1px solid #e5e5e5;
+        }
+
+    </style>
+
 </head>
-<body>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+
+        <!-- tabs contents -->
+            <div class="weui-cell">
+                <div class="weui-cell__hd weui-grids">
+                    <a href="" class="weui-grid js_grid">
+                        <div class="weui-grid__icon">
+                            <img src="src/img/head.jpg">
+                        </div>
+                        <p class="weui-grid__label">
+                            Button
+                        </p>
+                    </a>
+                </div>
+                <div class="weui-cell__bd">
+                    <img src="src/img/star-shixin.png" style="width: 20px ;height:20px;">
+                    <img src="src/img/star-shixin.png" style="width: 20px ;height:20px;">
+                    <img src="src/img/star-shixin.png" style="width: 20px ;height:20px;">
+                    <img src="src/img/star-shixin.png" style="width: 20px ;height:20px;">
+                    <p>标题文字</p>
+                </div>
+
+                <div class="weui-cell__hd time-box">
+                    <p>2018-03-06 11:15</p>
+                </div>
+
+            </div>
+
+        <div class="weui-cell">
+            <div class="weui-cell__hd weui-grids">
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="src/img/head.jpg">
+                    </div>
+                    <p class="weui-grid__label">
+                        Button
+                    </p>
+                </a>
+            </div>
+            <div class="weui-cell__bd">
+                <img src="src/img/star-shixin.png" style="width: 20px ;height:20px;">
+                <img src="src/img/star-shixin.png" style="width: 20px ;height:20px;">
+                <img src="src/img/star-shixin.png" style="width: 20px ;height:20px;">
+                <img src="src/img/star-shixin.png" style="width: 20px ;height:20px;">
+                <p>标题文字</p>
+            </div>
+
+            <div class="weui-cell__hd time-box">
+                <p>2018-03-06 11:15</p>
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+    <!-- 首页内容 -->
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="src/js/jquery-2.1.4.js"></script>
+<script src="src/js/jquery-weui.min.js"></script>
+<script src="src/js/fastclick.js"></script>
+<script src="src/js/swiper.js"></script>
+<script src="src/js/swiper.jquery.min.js"></script>
+<!-- 基础库文件 -->
+
+<script>
+
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+
+    //tab页js代码
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        mousewheelControl: true,
+        freeMode: true,
+        onTouchMove: function (swiper) {
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+        },
+        onTouchEnd: function (swiper) {
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+        }
+    });
+    var mySwiper2 = new Swiper('.swiper-container2', {
+        onTransitionEnd: function (swiper) {
+            $('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+            $('.swiper-container2 .swiper-slide-active').css('height', 'auto').siblings('.swiper-slide').css('height', '0px');
+            mySwiper.update();
+            $('.tabs-title a').eq(mySwiper2.activeIndex).addClass('tabs-title-on').siblings('a').removeClass('tabs-title-on');
+        }
+
+    });
+
+    $('.tabs-title a').click(function () {
+        $(this).addClass('tabs-title-on').siblings('a').removeClass('tabs-title-on');
+        mySwiper2.slideTo($(this).index(), 500, false)
+        $('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+        $('.swiper-container2 .swiper-slide-active').css('height', 'auto').siblings('.swiper-slide').css('height', '0px');
+        mySwiper.update();
+    });
+    //tab页js代码
+
+</script>
 
 </body>
 </html>
