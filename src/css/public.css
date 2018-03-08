@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     -webkit-tap-highlight-color: transparent;
+    font-family: '微软雅黑','Microsoft YaHei';
 }
 
 /* tab页高度 */
@@ -12,4 +13,49 @@ body, html {
 }
 .swiper-container2{
     height: 100%;
+}
+/*标题文字大小*/
+.txt-size-big{
+    font-size: 0.7rem;
+}
+/*内容文字中等大小*/
+.txt-size-medium{
+    font-size: 0.6rem;
+}
+/*最小号文字*/
+.txt-size-small{
+    font-size: 0.5rem;
+}
+
+/*最深色的黑色*/
+.txt-color-darkblack{
+    color:#000;
+}
+/*一般黑*/
+.txt-color-lightblack{
+    color:rgb(85,85,85);
+}
+/*灰色*/
+.txt-color-gray{
+    color:#888;
+}
+
+/*一般标题大小 颜色*/
+.txt-title{
+    font-size: 0.7rem;
+    color:rgb(85,85,85);
+    font-weight: bold;
+}
+
+/*深色标题大小 颜色*/
+.txt-title-darkblack{
+    font-size: 0.75rem;
+    color:#000;
+    font-weight: bold;
+}
+
+/*通用内容大小、颜色*/
+.txt-content{
+    font-size: 0.6rem;
+    color:#888;
 }
