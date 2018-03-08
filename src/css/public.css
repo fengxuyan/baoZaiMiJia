@@ -3,6 +3,9 @@ body, html {
     -webkit-tap-highlight-color: transparent;
     font-family: '微软雅黑','Microsoft YaHei';
 }
+li,a ,ul{
+    list-style-type: none;
+}
 
 /* tab页高度 */
 .swiper-container-content{
@@ -40,10 +43,23 @@ body, html {
     color:#888;
 }
 
+/*橘黄色*/
+.txt-color-orange{
+    color:rgb(231,145,76);
+}
+
 /*一般标题大小 颜色*/
 .txt-title{
     font-size: 0.7rem;
     color:rgb(85,85,85);
+    font-weight: bold;
+}
+
+
+/*橘黄色标题大小 颜色*/
+.txt-orange-title{
+    font-size: 0.7rem;
+    color:rgb(231,145,76);
     font-weight: bold;
 }
 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在校表现</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="src/css/weui.min.css">
+    <link rel="stylesheet" href="src/css/jquery-weui.css">
+    <link rel="stylesheet" href="src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="src/css/public.css">
+    <style>
+        .weui-grid {
+            float: left;
+            padding: 0;
+            width: auto;
+        }
+
+        .weui-grid:before, .weui-grids:after, .weui-grid:after, .weui-grids:before {
+            border: 0;
+        }
+        .weui-cell__hd img {
+            border-radius: 50%;
+        }
+        .weui-grid__icon {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .weui-cell:before {
+            border-top: 0;
+        }
+        .weui-cell{
+            overflow: hidden;
+        }
+        .pingjia-pos {
+            padding-left: 0.5rem;
+        }
+        .txt-title, .txt-orange-title{
+            font-size: 0.5rem;
+        }
+        .performance-box{
+            display: block;
+        }
+    </style>
+
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+
+    <!-- lists contents -->
+    <div class="weui-cell">
+        <div class="weui-cell__hd weui-grids">
+            <a href="" class="weui-grid js_grid">
+                <div class="weui-grid__icon">
+                    <img src="src/img/head.jpg">
+                </div>
+            </a>
+        </div>
+        <div class="weui-cell__bd pingjia-pos">
+            <p class="txt-title">姓名：小睡</p>
+            <p class="txt-size-small txt-color-gray">乳名：</p>
+            <p class="txt-size-small txt-color-gray">生日：2018-02-03</p>
+            <p class="txt-size-small txt-color-gray">年龄：2岁</p>
+        </div>
+    </div>
+    <div class="weui-cell performance-box">
+        <p class="txt-orange-title">课堂表现</p>
+        <p class="txt-content">yiuijhie</p>
+    </div>
+    <div class="weui-cell performance-box">
+        <p class="txt-orange-title">课后延伸</p>
+        <p class="txt-content">yiuijhie</p>
+    </div>
+    <div class="weui-cell performance-box">
+        <p class="txt-orange-title">老师对你说：</p>
+        <p class="txt-content">yiuijhie</p>
+    </div>
+    <div class="weui-cell performance-box">
+        <p class="txt-orange-title">家长回复：</p>
+        <p class="txt-content">yiuijhie</p>
+    </div>
+
+</div>
+
+<!-- 首页内容 -->
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="src/js/jquery-2.1.4.js"></script>
+<!--<script src="src/js/jquery-weui.min.js"></script>-->
+<script src="src/js/fastclick.js"></script>
+<!--<script src="src/js/swiper.js"></script>-->
+<!--<script src="src/js/swiper.jquery.min.js"></script>-->
+<!-- 基础库文件 -->
+<script>
+
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+
+</script>
+
+</body>
+</html>
