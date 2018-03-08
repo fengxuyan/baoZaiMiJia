@@ -48,6 +48,11 @@ li,a ,ul{
     color:rgb(231,145,76);
 }
 
+/*白色*/
+.txt-color-white{
+    color:#fff;
+}
+
 /*一般标题大小 颜色*/
 .txt-title{
     font-size: 0.7rem;
@@ -74,4 +79,8 @@ li,a ,ul{
 .txt-content{
     font-size: 0.6rem;
     color:#888;
+}
+
+.txt-right{
+    float:right;
 }
