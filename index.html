@@ -15,27 +15,8 @@
     <style>
         .index-nav{
             text-align: center;
-            padding: 5px;
+            padding: 10px;
             border-bottom: 1px solid #eee;
-        }
-        .index-banner img{
-            height: 160px;
-        }
-        .index-banner a{
-            position: relative;
-        }
-        .index-banner a p{
-            position: absolute;
-            text-indent: 10px;
-            color: #fff;
-            left: 0;
-            bottom: 6px;
-            width: 100%;
-            height: 30px;
-            background: rgba(0,0,0,.5);
-        }
-        .content-padding{
-            padding: 5px;
         }
     </style>
 
@@ -49,19 +30,10 @@
 
         <!-- 轮播 -->
         <div class="swiper-container">
-            <div class="swiper-wrapper index-banner">
-                <a href="javascript:void(0)" class="swiper-slide">
-                    <img src="src/img/banner1.jpg" alt="">
-                    <p class="index-banner-details">banner1</p>
-                </a>
-                <a href="javascript:void(0)" class="swiper-slide">
-                    <img src="src/img/banner2.jpg" alt="">
-                    <p class="index-banner-details">banner2</p>
-                </a>
-                <a href="javascript:void(0)" class="swiper-slide">
-                    <img src="src/img/banner3.jpg" alt="">
-                    <p class="index-banner-details">banner3</p>
-                </a>
+            <div class="swiper-wrapper">
+                <a href="javascript:void(0)" class="swiper-slide" style="height: 160px;background: red;">Slide 1</a>
+                <a href="javascript:void(0)" class="swiper-slide" style="height: 160px;background: pink;">Slide 2</a>
+                <a href="javascript:void(0)" class="swiper-slide" style="height: 160px;background: yellow;">Slide 3</a>
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -77,22 +49,20 @@
                 <img src="src/img/yuansuoguanli.png" alt="yuansuoguanli" width="60" height="60">
                 <p>园所管理</p>
             </a>
+<<<<<<< HEAD
             <a href="home-school.html" class="weui-flex__item">
+=======
+            <a class="weui-flex__item" href="home-school.html">
+>>>>>>> 8b3c0ab466904f3332afc787aeb7131f35892997
                 <img src="src/img/jiaxiaohudong.png" alt="jiaxiaohudong" width="60" height="60">
                 <p>家校互动</p>
             </a>
-            <a href="personal-assistant.html" class="weui-flex__item">
+            <a class="weui-flex__item">
                 <img src="src/img/gerenzhushou.png" alt="gerenzhushou" width="60" height="60">
                 <p>个人助手</p>
             </a>
         </div>
         <!-- 导航条 -->
-
-        <!-- 首页内容区域 -->
-        <div class="weui-flex content-padding">
-            首页内容区域
-        </div>
-        <!-- 首页内容区域 -->
 
     </div>
     <!-- 首页内容 -->
@@ -102,31 +72,31 @@
     <div class="weui-tabbar">
         <a href="index.html" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
-                <img src="src/img/shouye.png" alt="">
+                <img src="src/images/icon_nav_button.png" alt="">
             </div>
             <p class="weui-tabbar__label">首页</p>
         </a>
         <a href="news.html" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
-                <img src="src/img/xiaoxi.png" alt="">
+                <img src="src/images/icon_nav_msg.png" alt="">
             </div>
             <p class="weui-tabbar__label">消息</p>
         </a>
         <a href="circle.html" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
-                <img src="src/img/quanzi.png" alt="">
+                <img src="src/images/icon_nav_article.png" alt="">
             </div>
             <p class="weui-tabbar__label">圈子</p>
         </a>
         <a href="information.html" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
-                <img src="src/img/zixun.png" alt="">
+                <img src="src/images/icon_nav_cell.png" alt="">
             </div>
             <p class="weui-tabbar__label">资讯</p>
         </a>
         <a href="mine.html" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
-                <img src="src/img/wode.png" alt="">
+                <img src="src/images/icon_nav_cell.png" alt="">
             </div>
             <p class="weui-tabbar__label">我的</p>
         </a>
@@ -165,7 +135,7 @@
     });
 
     var mySwiper = new Swiper('.swiper-container',{
-        //autoplay:3000,
+        autoplay:3000,
         pagination : '.swiper-pagination',
         paginationHide :true,
         loop : true,
