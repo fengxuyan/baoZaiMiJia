@@ -75,3 +75,7 @@ li,a ,ul{
     font-size: 0.6rem;
     color:#888;
 }
+
+.txt-right{
+    float:right;
+}
