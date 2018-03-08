@@ -4,7 +4,7 @@ body, html {
 }
 
 /* tab页高度 */
-.swiper-container{
+.swiper-container-content{
     height: 100%;
 }
 .swiper-wrapper{
