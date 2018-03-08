@@ -29,6 +29,10 @@
             padding: 10px;
             border-bottom: 1px solid #eee;
         }
+        .list-group-item.txt-align{
+            display: flex;
+            align-items: center;
+        }
         .list-group-item dl{
             float: left;
         }
@@ -65,9 +69,9 @@
 
         <!-- tabs -->
         <div class="weui-flex tabs-title">
-            <a class="weui-flex__item tabs-title-on">园所活动</a>
-            <a class="weui-flex__item">园所公告</a>
-            <a class="weui-flex__item">每日食谱</a>
+            <a class="weui-flex__item txt-title tabs-title-on">园所活动</a>
+            <a class="weui-flex__item txt-title">园所公告</a>
+            <a class="weui-flex__item txt-title">每日食谱</a>
         </div>
         <!-- tabs -->
 
@@ -80,21 +84,22 @@
                         <div class="swiper-wrapper">
 
                             <div class="swiper-slide list-group swiper-slide-active">
+
                                 <a href="javascript:void(0)" class="list-group-item">
                                     <dl class="img">
                                         <img src="src/img/ysgg.png" alt="">
                                     </dl>
                                     <dl class="details">
-                                        <p>园所活动</p>
-                                        <p>
+                                        <p class="txt-title-darkblack">园所活动1</p>
+                                        <p class="txt-content">
                                             <span>活动时间：</span>
                                             <span>2018-03-08 11:22</span>
                                         </p>
-                                        <p>
+                                        <p class="txt-content">
                                             <span>活动人数：</span>
                                             <span>1/6</span>
                                         </p>
-                                        <p>
+                                        <p class="txt-content">
                                             <span>活动地点：</span>
                                             <span>万达广场</span>
                                         </p>
@@ -105,21 +110,23 @@
                                         <img src="src/img/ysgg.png" alt="">
                                     </dl>
                                     <dl class="details">
-                                        <p>园所活动</p>
-                                        <p>
+                                        <p class="txt-title-darkblack">园所活动2</p>
+                                        <p class="txt-content">
                                             <span>活动时间：</span>
                                             <span>2018-03-08 11:22</span>
                                         </p>
-                                        <p>
+                                        <p class="txt-content">
                                             <span>活动人数：</span>
                                             <span>1/6</span>
                                         </p>
-                                        <p>
+                                        <p class="txt-content">
                                             <span>活动地点：</span>
                                             <span>万达广场</span>
                                         </p>
                                     </dl>
                                 </a>
+
+
                             </div>
 
                             <div class="swiper-slide list-group swiper-slide-next">
@@ -128,9 +135,9 @@
                                         <img src="src/img/ysgg.png" alt="">
                                     </dl>
                                     <dl class="details">
-                                        <p>园所公告</p>
-                                        <p>园所公告小详情</p>
-                                        <p style="float: right">
+                                        <p class="txt-title-darkblack">园所公告</p>
+                                        <p class="txt-content">园所公告小详情</p>
+                                        <p class="txt-content" style="float: right">
                                             2018-3-8 11:27
                                         </p>
                                     </dl>
@@ -138,15 +145,15 @@
                             </div>
 
                             <div class="swiper-slide list-group swiper-slide-next">
-                                <a href="javascript:void(0)" class="list-group-item">
-                                    <p class="con">
+                                <a href="javascript:void(0)" class="list-group-item txt-align">
+                                    <p class="con txt-content">
                                         <span>2018-3-8</span>
                                         <span>宝贝食谱安排</span>
                                     </p>
                                     <p class="arrow"><img src="src/img/right-arrow.png" alt="arrow"></p>
                                 </a>
-                                <a href="javascript:void(0)" class="list-group-item">
-                                    <p class="con">
+                                <a href="javascript:void(0)" class="list-group-item txt-align">
+                                    <p class="con txt-content">
                                         <span>2018-3-9</span>
                                         <span>宝贝食谱安排</span>
                                     </p>
