@@ -79,7 +79,11 @@ li,a ,ul{
     font-size: 0.6rem;
     color:#888;
 }
-
+/*文字向右*/
 .txt-right{
     float:right;
+}
+/*文字居中*/
+.txt-center{
+    text-align: center;
 }
