@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>反馈详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../src/css/weui.min.css">
+    <link rel="stylesheet" href="../src/css/jquery-weui.css">
+    <link rel="stylesheet" href="../src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../src/css/public.css">
+    <style>
+        .weui-cell:before {
+            border-top: 0;
+        }
+        .weui-cell{
+            overflow: hidden;
+        }
+        .performance-box{
+            display: block;
+        }
+    </style>
+
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+
+    <!-- lists contents -->
+    <div class="weui-cell performance-box">
+        <p class="txt-orange-title">我的反馈:</p>
+        <p class="txt-content">yiuijhie</p>
+    </div>
+    <div class="weui-cell performance-box">
+        <p class="txt-orange-title">回复信息:</p>
+        <p class="txt-content">yiuijhie</p>
+    </div>
+
+</div>
+
+<!-- 首页内容 -->
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../src/js/jquery-2.1.4.js"></script>
+<!--<script src="src/js/jquery-weui.min.js"></script>-->
+<script src="../src/js/fastclick.js"></script>
+<!--<script src="src/js/swiper.js"></script>-->
+<!--<script src="src/js/swiper.jquery.min.js"></script>-->
+<!-- 基础库文件 -->
+<script>
+
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../src/css/weui.min.css">
+    <link rel="stylesheet" href="../src/css/jquery-weui.css">
+    <link rel="stylesheet" href="../src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../src/css/public.css">
+
+    <style>
+        .weui-cells{
+            margin-top: 0;
+        }
+        .weui-cells:after{
+            border:0;
+        }
+        .weui-cell{
+            padding:0 15px;
+        }
+        .weui-cells:before {
+            border: 0;
+        }
+
+        .weui-cell_access .weui-cell__ft:after {
+            border-width: 1px 1px 0 0;
+        }
+
+        .list-item{
+            height: 2.5rem;
+            line-height: 2.5rem;
+            border-bottom:1px solid #e5e5e5 ;
+        }
+        .head-pic {
+            width: 2rem;
+            height: 2rem;
+        }
+        .head-pic img{
+            width: 100%;
+            height: 100%;
+            /*border-radius: 50%;*/
+        }
+    </style>
+
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+
+        <!-- tabs contents -->
+
+        <ul class="weui-cells">
+            <li class="list-item"  id='show-actions'>
+                <a class="weui-flex weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-flex__item weui-cell__bd">
+                        <p class="txt-title">头像</p>
+                    </div>
+                    <div class="weui-flex__item weui-cell__bd ">
+                        <div class="head-pic txt-right">
+                            <img src="../src/img/head.jpg">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a class="weui-flex weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-flex__item weui-cell__bd">
+                        <p class="txt-title">姓名</p>
+                    </div>
+                    <div class="weui-flex__item weui-cell__bd">
+                        <p class="txt-content txt-right">病假</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="list-item">
+                <a class="weui-flex weui-cell weui-cell_access" href="modify-pwd.html">
+                    <div class="weui-flex__item weui-cell__bd">
+                        <p class="txt-title">修改密码</p>
+                    </div>
+                    <div class="weui-flex__item weui-cell__bd">
+                        <p class="txt-content txt-right">病假</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+
+
+    </div>
+</div>
+<!-- 首页内容 -->
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../src/js/jquery-2.1.4.js"></script>
+<script src="../src/js/jquery-weui.min.js"></script>
+<script src="../src/js/fastclick.js"></script>
+<!-- 基础库文件 -->
+
+<script>
+
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+
+    $(document).on("click", "#show-actions", function() {
+        $.actions({
+            onClose: function() {
+            },
+            actions: [
+                {
+                    text: "从相册选择",
+                    onClick: function() {
+//                        $.alert("发布成功");
+                    }
+                },
+                {
+                    text: "拍照",
+                    onClick: function() {
+//                        $.alert("你选择了“编辑”");
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+</body>
+</html>
