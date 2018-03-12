@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中心活动</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../src/css/weui.min.css">
+    <link rel="stylesheet" href="../src/css/jquery-weui.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../src/css/public.css">
+
+    <style>
+        .details-container{
+            padding: 8px;
+        }
+        .details-container img{
+            width: 100%;
+        }
+        .zjy-content{
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .zjy-content a{
+            float: right;
+            color: #F98B3C;
+        }
+        .transform-block{
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            margin-right: 6px;
+            background: #777777;
+            transform: rotate(45deg);
+        }
+        .big-spacing{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .join-baby-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .join-baby-container li{
+            list-style: none;
+        }
+        .join-baby-container .baby-logo{
+            text-align: center;
+            width: 30%;
+            margin-right: 10px;
+            margin-top: 6px;
+        }
+
+    </style>
+
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+        <div class="details-container">
+
+            <p class="zjy-title txt-title-darkblack">中心活动1</p>
+
+            <p class="zjy-content txt-content">
+                <span>早教机构名称</span>
+                <span>2018-03-08 9:36</span>
+            </p>
+
+            <p>
+                <img src="../src/img/banner1.jpg" alt="">
+            </p>
+
+            <p class="zjy-content txt-content">
+                <span class="transform-block"></span>
+                <span>活动时间：</span>
+                <span>11</span>
+            </p>
+            <p class="zjy-content txt-content">
+                <span class="transform-block"></span>
+                <span>活动地点：</span>
+                <span>11</span>
+            </p>
+            <p class="zjy-content txt-content">
+                <span class="transform-block"></span>
+                <span>活动对象：</span>
+                <span>11</span>
+            </p>
+            <p class="zjy-content txt-content">
+                <span class="transform-block"></span>
+                <span>活动人数：</span>
+                <span>11</span>
+            </p>
+            <p class="zjy-content txt-content">
+                <span class="transform-block"></span>
+                <span>活动流程：</span>
+                <span>11</span>
+            </p>
+            <p class="zjy-content txt-content">
+                <span class="transform-block"></span>
+                <span>活动方式：</span>
+                <span>11</span>
+            </p>
+            <p class="zjy-content txt-content">
+                <span class="transform-block"></span>
+                <span>温馨提示：</span>
+                <span>11</span>
+            </p>
+            <p class="zjy-content txt-content big-spacing">
+                <span class="transform-block"></span>
+                <span>部分内容抢先看：</span>
+                <a href="more-details.html">查看详情</a>
+            </p>
+            <p class="zjy-content txt-content big-spacing">
+                <span class="transform-block"></span>
+                <span>已报名宝宝：</span>
+                <a href="join-baby-details.html">查看详情</a>
+            </p>
+
+            <!-- 已报名宝宝 -->
+            <div class="join-baby-container">
+
+                <li class="baby-logo">
+                    <img src="../src/img/baby_boy.png" alt="">
+                    <span class="txt-title-darkblack">小明1</span>
+                </li>
+                <li class="baby-logo">
+                    <img src="../src/img/baby_boy.png" alt="">
+                    <span class="txt-title-darkblack">小明2</span>
+                </li>
+
+                <li class="baby-logo">
+                    <img src="../src/img/baby_boy.png" alt="">
+                    <span class="txt-title-darkblack">小明3</span>
+                </li>
+
+                <li class="baby-logo">
+                    <img src="../src/img/baby_boy.png" alt="">
+                    <span class="txt-title-darkblack">小明4</span>
+                </li>
+
+                <li class="baby-logo">
+                    <img src="../src/img/baby_boy.png" alt="">
+                    <span class="txt-title-darkblack">小明5</span>
+                </li>
+
+            </div>
+            <!-- 已报名宝宝 -->
+
+        </div>
+    </div>
+    <!-- 首页内容 -->
+
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../src/js/jquery-2.1.4.js"></script>
+<script src="../src/js/jquery-weui.min.js"></script>
+<script src="../src/js/fastclick.js"></script>
+<script src="../src/js/swiper.js"></script>
+<!-- 基础库文件 -->
+
+<script>
+
+    $(function () {
+
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+
+    });
+
+</script>
+
+</body>
+</html>
