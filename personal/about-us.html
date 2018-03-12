@@ -104,13 +104,26 @@
             font-weight: normal;
         }
         .feedback-container{
+            position: relative;
             padding: 0.3rem;
             border: 1px solid #ddd;
         }
 
         .feedback-container img{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            bottom: 0;
             width:3rem;
             height:3rem;
+
+        }
+        .feedback-container input{
+            position: absolute;
+            opacity: 0;
+            left: 0;
+            bottom: 0;
+            padding: 0.5rem 0;
         }
 
         .view-btn {
@@ -125,8 +138,7 @@
         }
 
         .check-feedback p{
-            margin-top: 2rem
-        ;
+            margin-top: 2rem;
             text-align: center;
             font-weight: normal;
             color:rgb(230, 128, 55);;
@@ -178,8 +190,8 @@
                                 <div class="feedback-container">
 
                                     <textarea rows="10" cols="10" class="txt-title" placeholder="请输入遇到的问题或建议(1-100字)" ></textarea>
-                                    <img  id='show-actions' src="../src/img/pic-upload2.png"/>
-
+                                    <img  src="../src/img/pic-upload2.png"/>
+                                    <input type="file"  accept="image/*" name="" value="">
 
                                 </div>
 

@@ -20,6 +20,7 @@
         }
         .index-banner img{
             height: 160px;
+            width:100%;
         }
         .index-banner a{
             position: relative;
@@ -34,15 +35,29 @@
             height: 30px;
             background: rgba(0,0,0,.5);
         }
-        .content-padding{
-            padding: 5px;
+        .list-box{
+            text-align: center;
+
         }
-        .weui-tabbar{
-            background-color: rgb(26,27,31);
+        .icon-box img{
+            width: 2rem;
+            height: 0.5rem;
         }
-        .weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{
-            /*color: rgb(153,152,152);*/
-            color: #fff;
+        .tabs-box{
+            border-bottom: 1px solid #eee;
+            /*border-top: 1px solid #eee;*/
+            padding: 0.3rem 0.5rem;
+        }
+        .tabs-box .txt-title{
+            margin:0 0.7rem;
+            /*border-bottom: 0.1rem solid #E8924D;*/
+        }
+        .tabs-box .txt-title-on{
+            /*margin:0 1rem;*/
+            border-bottom: 0.1rem solid #E8924D;
+        }
+        .tabs-title{
+            margin-top: 0.5rem;
         }
     </style>
 
@@ -80,7 +95,7 @@
                 <img src="src/img/yuansuodongtai.png" alt="yuansuodongtai" width="60" height="60">
                 <p class="txt-title">园所动态</p>
             </a>
-            <a href="center-management/center-management.html" class="weui-flex__item">
+            <a href="kindergarden-management/kindergarden-management.html" class="weui-flex__item">
                 <img src="src/img/yuansuoguanli.png" alt="yuansuoguanli" width="60" height="60">
                 <p class="txt-title">园所管理</p>
             </a>
@@ -96,8 +111,15 @@
         <!-- 导航条 -->
 
         <!-- 首页内容区域 -->
-        <div class="weui-flex content-padding">
-            首页内容区域
+        <div class="list-box tabs-title">
+            <div class="txt-title txt-center">幼儿园机构</div>
+            <div class="icon-box"><img src="src/img/zhexian.png"></div>
+        </div>
+        <div class="weui-flex list-box tabs-box">
+            <div class="weui-flex__item txt-title txt-title-on">园所动态</div>
+            <div class="weui-flex__item txt-title">园所管理</div>
+            <div class="weui-flex__item txt-title">家校互动</div>
+            <div class="weui-flex__item txt-title">个人助手</div>
         </div>
         <!-- 首页内容区域 -->
 
@@ -156,18 +178,6 @@
 
         // 解决ios端click事件300毫秒延迟
         FastClick.attach(document.body);
-
-        //当前页面底部高亮
-        var current_url = location.href;
-        var cut_current_url = current_url.substr(current_url.indexOf('/zhijiaoyun'));
-        $('.weui-tabbar a').each(function () {
-
-            if ($($(this))[0].href.substr(current_url.indexOf('/zhijiaoyun')) == cut_current_url) {
-                $('.weui-tabbar a').removeClass('weui-bar__item--on');
-                $(this).addClass('weui-bar__item--on');
-            }
-
-        });
 
     });
 

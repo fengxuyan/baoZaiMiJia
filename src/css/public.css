@@ -17,6 +17,19 @@ li,a ,ul{
 .swiper-container2{
     height: 100%;
 }
+
+.weui-cells{
+    margin-top: 0;
+}
+.weui-tabbar{
+    background-color: rgb(26,27,31);
+}
+.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{
+    /*color: rgb(153,152,152);*/
+    color: #fff;
+}
+
+
 /*标题文字大小*/
 .txt-size-big{
     font-size: 0.7rem;
