@@ -2,14 +2,162 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f8685e1-8d05-4b19-a277-16e91d2e8842" name="Default" comment="修改路由前缀">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/img/quanzi_1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/carema.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/css/img/default.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/css/img/del.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/css/img/loading.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/css/webiaoqing.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/0.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/1.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/10.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/100.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/101.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/102.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/103.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/104.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/11.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/12.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/13.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/14.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/15.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/16.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/17.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/18.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/19.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/2.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/20.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/21.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/22.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/23.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/24.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/25.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/26.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/27.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/28.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/29.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/3.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/30.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/31.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/32.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/33.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/34.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/35.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/36.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/37.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/38.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/39.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/4.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/40.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/41.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/42.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/43.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/44.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/45.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/46.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/47.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/48.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/49.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/5.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/50.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/51.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/52.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/53.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/54.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/55.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/56.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/57.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/58.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/59.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/6.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/60.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/61.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/62.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/63.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/64.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/65.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/66.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/67.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/68.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/69.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/7.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/70.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/71.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/72.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/73.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/74.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/75.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/76.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/77.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/78.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/79.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/8.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/80.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/81.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/82.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/83.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/84.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/85.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/86.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/87.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/88.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/89.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/9.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/90.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/91.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/92.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/93.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/94.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/95.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/96.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/97.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/98.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/99.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/images/arclist/face.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/js/jquery_min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/js/webiaoqin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/bg.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/comment-logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/comment.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/default-skin.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/demo.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/dianzanxin.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/fabulous-logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/font-awesome.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/fonts/lato/Lato-Bol-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/fonts/lato/Lato-Lig-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/fonts/lato/Lato-Reg-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/fonts/weathericons-regular-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/header.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/img/default.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/img/del.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/img/loading.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/jia.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/jiahao.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/jianpan.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/photoswipe-ui-default.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/photoswipe.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/photoswipe.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/pinglun.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/s5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/sb1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/sb3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/sb4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/shangchuan.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/th1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/tx.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/tx2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/tx3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/webiaoqin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/webiaoqing.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/xiaolian.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/circle/src/y1.jpeg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/circle.html" afterPath="$PROJECT_DIR$/circle/circle.html" />
+      <change beforePath="$PROJECT_DIR$/circle/circle.html" afterPath="$PROJECT_DIR$/circle/circle.html" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/information/information.html" afterPath="$PROJECT_DIR$/information/information.html" />
-      <change beforePath="$PROJECT_DIR$/news/news.html" afterPath="$PROJECT_DIR$/news/news.html" />
-      <change beforePath="$PROJECT_DIR$/personal/mine.html" afterPath="$PROJECT_DIR$/personal/mine.html" />
-      <change beforePath="$PROJECT_DIR$/zaojiao-index.html" afterPath="$PROJECT_DIR$/zaojiao-index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +177,8 @@
       <file leaf-file-name="public.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/public.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+            <state relative-caret-position="1653">
+              <caret line="87" column="1" lean-forward="false" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -39,8 +187,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="69" column="30" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="30" />
+            <state relative-caret-position="456">
+              <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zaojiao-index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zaojiao-index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabbar-class.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/tabbar-class.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -49,18 +217,40 @@
       <file leaf-file-name="kindergarten-activices.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kindergarten-activices/kindergarten-activices.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="58" selection-end-column="9" />
+            <state relative-caret-position="475">
+              <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="circle.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/circle/circle.html">
+      <file leaf-file-name="carema.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/circle/carema.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+            <state relative-caret-position="551">
+              <caret line="149" column="22" lean-forward="true" selection-start-line="149" selection-start-column="22" selection-end-line="149" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/circle/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/circle/src/demo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5624">
+              <caret line="296" column="23" lean-forward="true" selection-start-line="296" selection-start-column="23" selection-end-line="296" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -86,6 +276,7 @@
       <find>swiper-container2</find>
       <find>join-baby-container</find>
       <find>list-group-item</find>
+      <find>jianpan</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,7 +293,6 @@
         <option value="$PROJECT_DIR$/快速复制.html" />
         <option value="$PROJECT_DIR$/src/encyclopedia-details.html" />
         <option value="$PROJECT_DIR$/src/css/public.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/personal-assistant.html" />
         <option value="$PROJECT_DIR$/encyclopedia-details.html" />
         <option value="$PROJECT_DIR$/kindergarten-activices.html" />
@@ -115,6 +305,10 @@
         <option value="$PROJECT_DIR$/kindergarten-activices/recipes-details.html" />
         <option value="$PROJECT_DIR$/kindergarten-activices/kindergarten-activices.html" />
         <option value="$PROJECT_DIR$/circle/circle.html" />
+        <option value="$PROJECT_DIR$/circle/src/demo.css" />
+        <option value="$PROJECT_DIR$/circle/index.html" />
+        <option value="$PROJECT_DIR$/circle/carema.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -157,12 +351,23 @@
             <path>
               <item name="zhijiaoyun" type="b2602c69:ProjectViewProjectNode" />
               <item name="zhijiaoyun" type="462c0819:PsiDirectoryNode" />
+              <item name="circle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhijiaoyun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhijiaoyun" type="462c0819:PsiDirectoryNode" />
               <item name="kindergarten-activices" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zhijiaoyun" type="b2602c69:ProjectViewProjectNode" />
               <item name="zhijiaoyun" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhijiaoyun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhijiaoyun" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -176,18 +381,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="SearchEverywhereHistoryKey" value="zaojiao-index.html&#9;FILE&#9;file://D:/zhijiaoyun/zaojiao-index.html" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\zhijiaoyun\src\img" />
-      <recent name="D:\zhijiaoyun\src\js" />
-      <recent name="D:\zhijiaoyun\src\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\zhijiaoyun\circle" />
       <recent name="D:\zhijiaoyun\kindergarten-activices" />
       <recent name="D:\zhijiaoyun\personal-assistant" />
       <recent name="D:\zhijiaoyun" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\zhijiaoyun\circle\src" />
+      <recent name="D:\zhijiaoyun\circle" />
+      <recent name="D:\zhijiaoyun\src\img" />
+      <recent name="D:\zhijiaoyun\src\js" />
+      <recent name="D:\zhijiaoyun\src\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -232,7 +441,9 @@
       <workItem from="1520816125154" duration="6134000" />
       <workItem from="1520902611151" duration="3000" />
       <workItem from="1520908614380" duration="688000" />
-      <workItem from="1520909313987" duration="1020000" />
+      <workItem from="1520909313987" duration="3273000" />
+      <workItem from="1520919063828" duration="5353000" />
+      <workItem from="1521085486229" duration="2789000" />
     </task>
     <task id="LOCAL-00001" summary="修改路由前缀">
       <created>1520387765436</created>
@@ -245,7 +456,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68187000" />
+    <option name="totallyTimeSpent" value="78582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -313,84 +524,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/css/public.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kindergarten-activices/recipes-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding>
-            <element signature="n#dl#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kindergarten-activices/kindergarten-activices.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2375">
-          <caret line="125" column="34" lean-forward="false" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="62" column="14" lean-forward="false" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kindergarten-activices/kindergarten-activices.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="108" column="52" lean-forward="false" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kindergarten-activices/recipes-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="n#dl#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kindergarten-activices/kindergarten-activices.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="108" column="52" lean-forward="true" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kindergarten-activices/recipes-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="n#dl#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/public.css">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -401,9 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1482">
           <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="n#dl#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -435,9 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1482">
           <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="n#dl#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -614,40 +741,115 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circle/src/xiaolian.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circle/js/webiaoqin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           <folding>
-            <element signature="n#dl#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1520826550104" expanded="true" signature="9619:9650" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/circle/images/arclist/4.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circle/src/pinglun.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circle/src/webiaoqing.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="69" column="30" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="570">
+          <caret line="30" column="15" lean-forward="true" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kindergarten-activices/kindergarten-activices.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="58" selection-end-column="9" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/circle/images/arclist/0.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/public.css">
+    <entry file="file://$PROJECT_DIR$/circle/src/demo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+        <state relative-caret-position="5624">
+          <caret line="296" column="23" lean-forward="true" selection-start-line="296" selection-start-column="23" selection-end-line="296" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/circle/circle.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+        <state relative-caret-position="581">
+          <caret line="78" column="32" lean-forward="true" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/public.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="87" column="1" lean-forward="false" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kindergarten-activices/kindergarten-activices.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circle/carema.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="149" column="22" lean-forward="true" selection-start-line="149" selection-start-column="22" selection-end-line="149" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circle/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zaojiao-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/tabbar-class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
           <folding />
         </state>
       </provider>

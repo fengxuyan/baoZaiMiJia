@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<style type="text/css">
+			html,body{
+				margin: 0;
+			}
+			.imageDiv {
+				/*display: inline-block;*/
+				float: left;
+				/*width: 100px;*/
+				/*height: 100px;*/
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				/*border: 1px dashed darkgray;*/
+				background: #f8f8f8;
+				position: relative;
+				overflow: hidden;
+			}
+			.imageDiv img{
+				margin-right: 6px;
+			}
+			
+			.cover {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				width: 50px;
+				height: 50px;
+				background-color: rgba(0, 0, 0, .3);
+				display: none;
+				line-height: 50px;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.cover>.delbtn {
+				color: red;
+				font-size: 20px;
+			}
+			
+			.imageDiv:hover .cover {
+				display: block;
+			}
+			
+			.addImages {
+				/*display: inline-block;*/
+				float: left;
+				width: 50px;
+				height: 50px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				border: 1px dashed darkgray;
+				background: #f8f8f8;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.text-detail {
+				width: 100%;
+				height: 50;
+				line-height: 50px;
+				text-align: center;
+			}
+			
+			.text-detail > span {
+				font-size: 40px;
+			}
+			
+			.file {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 50px;
+				height: 50px;
+				opacity: 0;
+			}
+			
+			.text-container{
+				margin: 8px;
+				width: 95%;
+				height: 100px;
+				border-bottom: 1px solid #eee;
+				overflow: auto;
+				overflow-x: hidden;
+				padding: 6px;
+				margin-bottom: 10px;
+				outline: none;
+				-webkit-tap-highlight-color:rgba(255,0,0,0);
+			}
+			.picDiv{
+				display: flex; 
+				flex-direction: row;
+				margin: 8px;
+			}
+			.text-title{
+				width: 100%;
+				height: 45px;
+				background: rgb(26,27,31);
+				text-align: center;
+				line-height: 45px;
+			}
+			.text-title .cancel{
+				width: 18%;
+				height: 45px;
+				float: left;
+				color: #fff;
+			}
+			.text-title .text{
+				width: 64%;
+				height: 45px;
+				float: left;
+				color: #fff;
+				font-weight: bold;
+			}
+			.text-title .publish{
+				width: 18%;
+				height: 45px;
+				float: left;
+				color: #07bb07;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="text-title">
+			<div class="cancel" onClick="javascript :history.back(-1);">取消</div>
+			<div class="text">发表文字</div>
+			<div class="publish">发表</div>
+		</div>
+		
+		<div class="text-container" contenteditable="true">
+			
+		</div>
+
+		<div class="picDiv">
+			<div class="addImages">
+				<!--multiple属性可选择多个图片上传-->
+				<input type="file" class="file" id="fileInput" multiple accept="image/png, image/jpeg, image/gif, image/jpg" />
+				<div class="text-detail">
+					<span>+</span>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery_min.js"></script>
+
+		<script>
+			$(".file").change(function() {
+				//获取选择图片的对象
+				var docObj = $(this)[0];
+				var picDiv = $(this).parents(".picDiv");
+				//得到所有的图片文件
+				var fileList = docObj.files;
+				for(var i = 0; i < fileList.length; i++) {
+					var fr = new FileReader();
+					var single = fileList[i];
+					fr.onload = function(single) {
+						var picHtml = "<div class='imageDiv' > <img id='img" + single.name + "' src='" + single.target.result + "' /> <div class='cover'><i class='delbtn'>删除</i></div></div>"
+						picDiv.prepend(picHtml);
+						var imgObjPreview = document.getElementById("img" + single.name);
+						//图片属性
+						imgObjPreview.style.display = 'block';
+						imgObjPreview.style.width = '50px';
+						imgObjPreview.style.height = '50px';
+					};
+					fr.readAsDataURL(single);
+				}
+			});
+			/*删除功能*/
+			$(document).on("click", ".delbtn", function() {
+				console.log("click")
+				var _this = $(this);
+				_this.parents(".imageDiv").remove();
+			});
+		</script>
+	</body>
+
+</html>
