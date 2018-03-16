@@ -45,15 +45,12 @@
         }
         .tabs-box{
             border-bottom: 1px solid #eee;
-            /*border-top: 1px solid #eee;*/
             padding: 0.3rem 0.5rem;
         }
         .tabs-box .txt-title{
             margin:0 0.7rem;
-            /*border-bottom: 0.1rem solid #E8924D;*/
         }
         .tabs-box .txt-title-on{
-            /*margin:0 1rem;*/
             border-bottom: 0.1rem solid #E8924D;
         }
         .tabs-title{
@@ -176,14 +173,10 @@
 <script>
 
     $(function () {
-
-        // 解决ios端click事件300毫秒延迟
         FastClick.attach(document.body);
-
     });
 
     var mySwiper = new Swiper('.swiper-container',{
-        //autoplay:3000,
         pagination : '.swiper-pagination',
         paginationHide :true,
         loop : true,
