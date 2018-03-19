@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>详细信息</title>
+    <title>吴同学 档案列表</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- 基础库文件 -->
@@ -12,26 +12,43 @@
     <!-- 基础库文件 -->
 
     <link rel="stylesheet" href="../../src/css/public.css">
-    <link rel="stylesheet" href="home-school-interactive.css">
+
+    <style>
+
+        .weui-cells{
+            margin-top: 0;
+        }
+
+    </style>
+
 </head>
 <body ontouchstart>
 
 <div class="weui-tab">
 
     <!-- 首页内容 -->
-    <div class="container">
+    <div class="weui-tab__bd">
 
         <!-- tabs contents -->
-    <div class="details-container">
-            <p class="txt-content">嚣张:111111115</p>
-            <p class="txt-content">联系方式：18888888888</p>
-            <p class="txt-content">宝贝生日：2018-02-27</p>
-            <p class="txt-content">家庭住址：河里</p>
-            <p class="txt-content">推荐人：元谋人</p>
 
-        <div class="icon"><img src="../../src/img/shenhe_ok.png"></div>
+        <div class="weui-cells">
+            <a class="weui-cell weui-cell_access" href="student-files-classLists.html">
+                <div class="weui-cell__bd">
+                    <p class="txt-title">2018 第一周学生成长档案</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__bd">
+                    <p class="txt-title">2018 第二周学生成长档案</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+
+        </div>
+
     </div>
-    </div>
+
 </div>
 <!-- 首页内容 -->
 </div>
@@ -39,22 +56,16 @@
 
 <!-- 基础库文件 -->
 <script src="../../src/js/jquery-2.1.4.js"></script>
-<!--<script src="src/js/jquery-weui.min.js"></script>-->
+<script src="../../src/js/jquery-weui.min.js"></script>
 <script src="../../src/js/fastclick.js"></script>
-<!--<script src="src/js/swiper.js"></script>-->
-<!--<script src="src/js/swiper.jquery.min.js"></script>-->
-<!--<script src="src/js/rem.js"></script>-->
 <!-- 基础库文件 -->
 
 <script>
-
 
     $(function () {
         // 解决ios端click事件300毫秒延迟
         FastClick.attach(document.body);
     });
-
-
 </script>
 
 </body>

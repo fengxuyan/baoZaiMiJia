@@ -12,7 +12,61 @@
     <!-- 基础库文件 -->
 
     <link rel="stylesheet" href="../../src/css/public.css">
-    <link rel="stylesheet" href="center-management.css">
+
+    <style>
+
+        .weui-tab{
+            /*background: rgb(244,244,244);*/
+        }
+        .weui-tab{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .container{
+            width:95%;
+            height: 97%;
+            /*background:#fff;*/
+        }
+        .details-container{
+            border-radius: 5px;
+            position: relative;
+
+        }
+        .details-container li:nth-child(odd){
+            padding-left:0.5rem;
+            background: rgb(237,237,237);
+        }
+        .details-container li:nth-child(even){
+            padding:0.5rem 0 0.7rem 0.5rem;
+            background: rgb(244,244,244);
+            color:#000;
+        }
+
+        .details-container li:nth-child(1) {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+
+        }
+
+        .details-container li:last-child{
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+
+        }
+        .txt-time{
+            position: absolute;
+            right:1rem;
+            top:0;
+        }
+
+        .top-txt{
+            height: 2rem;
+            line-height: 2rem;
+        }
+    </style>
+
 </head>
 <body ontouchstart>
 <div class="top-txt">

@@ -11,7 +11,49 @@
     <!-- 基础库文件 -->
 
     <link rel="stylesheet" href="../../src/css/public.css">
-    <link rel="stylesheet" href="center-activities.css">
+
+    <style>
+        .notice-details{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .notice-details img{
+            width: 95%;
+            margin-top: 20px;
+        }
+        .notice-container{
+            width: 80%;
+            height: 400px;
+            position: absolute;
+            top: 80px;
+            left: 10%;
+            overflow: auto;
+            overflow-x: hidden;
+        }
+        .notice-container p{
+            width: 100%;
+            word-break:break-all;
+        }
+        .notice-container .title{
+            text-align: center;
+        }
+        .notice-container .content{
+            text-align: left;
+            text-indent: 32px;
+            margin-top: 10px;
+        }
+        .notice-container .name{
+            text-align: right;
+            margin-top: 10px;
+        }
+        .notice-container .time{
+            text-align: right;
+        }
+    </style>
+
 </head>
 <body ontouchstart>
 
