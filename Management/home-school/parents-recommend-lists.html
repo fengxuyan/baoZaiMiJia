@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>语文班</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../../src/css/weui.min.css">
+    <link rel="stylesheet" href="../../src/css/jquery-weui.css">
+    <link rel="stylesheet" href="../../src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../../src/css/public.css">
+
+    <style>
+        .weui-cells{
+            margin-top: 0;
+        }
+
+    </style>
+
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+
+        <!-- tabs contents -->
+
+        <div class="weui-cells">
+            <a class="weui-cell weui-cell_access" href="parents-recommend-details.html">
+                <div class="weui-cell__bd">
+                    <p class="txt-title">嚣张</p>
+                </div>
+                <div class="weui-cell__ft txt-size-small">2018-02-27 18:23</div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="parents-recommend-details.html">
+                <div class="weui-cell__bd">
+                    <p class="txt-title">王菲类</p>
+                </div>
+                <div class="weui-cell__ft txt-size-small">2018-02-27 18:23</div>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+<!-- 首页内容 -->
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../../src/js/jquery-2.1.4.js"></script>
+<!--<script src="src/js/jquery-weui.min.js"></script>-->
+<script src="../../src/js/fastclick.js"></script>
+<!--<script src="src/js/swiper.js"></script>-->
+<!--<script src="src/js/swiper.jquery.min.js"></script>-->
+<!--<script src="src/js/rem.js"></script>-->
+<!-- 基础库文件 -->
+
+<script>
+
+    $('.weui-cell').bind('click',function () {
+        $(this).parent().siblings().children('.lists-container').hide();
+        $(this).parent().children('.lists-container').toggle();
+    })
+
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+
+
+</script>
+
+</body>
+</html>

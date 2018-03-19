@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>园所管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../../src/css/weui.min.css">
+    <link rel="stylesheet" href="../../src/css/jquery-weui.css">
+    <link rel="stylesheet" href="../../src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../../src/css/public.css">
+
+    <style>
+        .tabs-title {
+            text-align: center;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #F78C3C;
+        }
+
+        .tabs-title .tabs-title-on {
+            border-bottom: 2px solid #F78C3C;
+        }
+
+        .weui-cells {
+            margin-top: 0;
+            overflow-y: scroll;
+        }
+        .weui-cells:after{
+            bottom:auto;
+        }
+
+        .weui-grid {
+            /* position: relative; */
+            float: left;
+            padding: 0;
+            width: auto;
+        }
+
+        .weui-cell__hd img {
+            border-radius: 50%;
+        }
+
+        .weui-grid:before, .weui-grids:after, .weui-grid:after, .weui-grids:before {
+            border: 0;
+        }
+
+        .weui-cell {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .weui-grid__icon {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .weui-cell__bd {
+            padding-left: 0.5rem;
+        }
+
+        .lists-container {
+            display: none;
+            overflow: hidden;
+            padding: 0.3rem 0;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .img-box {
+            display: inline-block;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .lists-container .lists-box {
+            float: left;
+            width: 33%;
+        }
+
+        .img-box img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .performance-box {
+            display: block;
+            border-top: 1px solid #ddd;
+        }
+
+        .txt-size-medium {
+            text-align: center;
+        }
+
+        .small-box {
+            /*overflow: hidden;*/
+            text-align: center;
+            margin: 0 auto;
+            /*border:1px solid green;*/
+            /*margin:0.5rem;*/
+
+        }
+
+        .small-box .item-box {
+
+            display: inline-block;
+            float: left;
+            width: 44%;
+            /*background: #fff;*/
+            text-align: center;
+            margin: 3%;
+            margin-top: 0;
+            /*margin-bottom: 0;*/
+
+        }
+
+        .box-container {
+            overflow: hidden;
+
+            background: #F4F4F4;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .box-container:after{
+            content: '';
+            clear:both;
+        }
+        .g-txt-title {
+            margin-left: 3%;
+            padding: 0.3rem;
+        }
+
+        .txt-content {
+            background: #fff;
+        }
+
+        .small-txt-title {
+            background: #324FC1;
+
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .item-box .txt-content{
+            color:#000;
+        }
+        .txt-content.small-txt-title{
+            color: #fff;
+        }
+        .u-txt-radius {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.2rem;
+        }
+
+        .icon-container img {
+            width: 35px;
+        }
+
+        .swiper-container{
+            height: 100% !important;
+        }
+        .swiper-container2{
+            min-height: 700px;
+        }
+
+    </style>
+
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+
+        <!-- tabs -->
+        <div class="weui-flex tabs-title">
+            <a class="weui-flex__item txt-title tabs-title-on">园所花名册</a>
+            <a class="weui-flex__item txt-title">到园离园</a>
+            <a class="weui-flex__item txt-title">教学活动</a>
+        </div>
+        <!-- tabs -->
+
+        <!-- tabs contents -->
+        <div class="swiper-container swiper-container-vertical swiper-container-free-mode">
+
+            <div class="swiper-wrapper w">
+
+                <div class="swiper-slide d swiper-slide-active">
+
+                    <div class="init-loading list-group-item text-center" style="display: none;"></div>
+
+                    <div class="swiper-container2 swiper-container-horizontal">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide list-group swiper-slide-next">
+                                <div class="weui-cells">
+                                    <ul class="class-lists-container">
+                                        <li class="lists-item">
+                                            <div class="weui-cell">
+                                                <div class="weui-cell__hd weui-grids">
+                                                    <div class="weui-grid js_grid">
+                                                        <div class="weui-grid__icon">
+                                                            <img src="../../src/img/head.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="weui-cell__bd">
+                                                    <p class="txt-title">语文班（7人）</p>
+                                                    <p class="txt-content">0-12</p>
+                                                </div>
+                                            </div>
+                                            <ul class="lists-container">
+                                                <li class="lists-box">
+                                                    <a href="kindManage-rosterdetails.html">
+                                                        <div class="img-box"><img class="" src="../../src/img/head.jpg"></div>
+                                                        <p class="txt-title">小童鞋</p>
+                                                    </a>
+                                                </li>
+                                                <li class="lists-box">
+                                                    <a href="kindManage-rosterdetails.html">
+                                                        <div class="img-box"><img class="" src="../../src/img/head.jpg"></div>
+                                                        <p class="txt-title">小童鞋</p>
+                                                    </a>
+                                                </li>
+                                                <li class="lists-box">
+                                                    <a href="kindManage-rosterdetails.html">
+                                                        <div class="img-box"><img class="" src="../../src/img/head.jpg"></div>
+                                                        <p class="txt-title">小童鞋</p>
+                                                    </a>
+                                                </li>
+                                                <li class="lists-box">
+                                                    <a href="kindManage-rosterdetails.html">
+                                                        <div class="img-box"><img class="" src="../../src/img/head.jpg"></div>
+                                                        <p class="txt-title">小童鞋</p>
+                                                    </a>
+                                                </li>
+                                                <li class="lists-box">
+                                                    <a href="kindManage-rosterdetails.html">
+                                                        <div class="img-box"><img class="" src="../../src/img/head.jpg"></div>
+                                                        <p class="txt-title">小童鞋</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="lists-item">
+                                            <div class="weui-cell">
+                                                <div class="weui-cell__hd weui-grids">
+                                                    <div class="weui-grid js_grid">
+                                                        <div class="weui-grid__icon">
+                                                            <img src="../../src/img/head.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="weui-cell__bd">
+                                                    <p class="txt-title">语文班（7人）</p>
+                                                    <p class="txt-content">0-12</p>
+                                                </div>
+                                            </div>
+                                            <ul class="lists-container">
+                                                <li class="lists-box">
+                                                    <a href="kindManage-rosterdetails.html">
+                                                        <div class="img-box"><img class="" src="../../src/img/head.jpg"></div>
+                                                        <p class="txt-title">小童鞋</p>
+                                                    </a>
+                                                </li>
+                                                <li class="lists-box">
+                                                    <a href="kindManage-rosterdetails.html">
+                                                        <div class="img-box"><img class="" src="../../src/img/head.jpg"></div>
+                                                        <p class="txt-title">小童鞋</p>
+                                                    </a>
+                                                </li>
+                                                <li class="lists-box">
+                                                    <a href="kindManage-rosterdetails.html">
+                                                        <div class="img-box"><img class="" src="../../src/img/head.jpg"></div>
+                                                        <p class="txt-title">小童鞋</p>
+                                                    </a>
+                                                </li>
+                                                <li class="lists-box">
+                                                    <a href="kindManage-rosterdetails.html">
+                                                        <div class="img-box"><img class="" src="../../src/img/head.jpg"></div>
+                                                        <p class="txt-title">小童鞋</p>
+                                                    </a>
+                                                </li>
+                                                <li class="lists-box">
+                                                    <a href="kindManage-rosterdetails.html">
+                                                        <div class="img-box"><img class="" src="../../src/img/head.jpg"></div>
+                                                        <p class="txt-title">小童鞋</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide list-group swiper-slide-active" style="width: 1920px;">
+
+                                <div class="weui-cells">
+
+                                    <div class="weui-cell performance-box">
+                                        <div class="weui-flex txt-size-medium">
+                                            <div class="weui-flex__item">8人</div>
+                                            <div class="weui-flex__item">0人</div>
+                                            <div class="weui-flex__item">0人</div>
+                                            <div class="weui-flex__item">5人</div>
+                                        </div>
+                                        <div class="weui-flex txt-size-medium">
+                                            <div class="weui-flex__item">全员总数</div>
+                                            <div class="weui-flex__item">今日到园</div>
+                                            <div class="weui-flex__item">平安离园</div>
+                                            <div class="weui-flex__item">目前在园</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-container" href="students-leave-lists.html">
+                                        <p class="txt-title g-txt-title">幼儿园-小班</p>
+                                        <div class="small-box">
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+
+
+                                        </div>
+                                        <!--<div class="weui-cell__ft txt-color-lightblack">7人</div>-->
+                                    </div>
+                                    <div class="box-container" href="students-leave-lists.html">
+                                        <p class="txt-title g-txt-title">幼儿园-小班</p>
+                                        <div class="small-box">
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+
+
+                                        </div>
+                                        <!--<div class="weui-cell__ft txt-color-lightblack">7人</div>-->
+                                    </div>
+                                    <div class="box-container" href="students-leave-lists.html">
+                                        <p class="txt-title g-txt-title">幼儿园-小班</p>
+                                        <div class="small-box">
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+
+
+                                        </div>
+                                        <!--<div class="weui-cell__ft txt-color-lightblack">7人</div>-->
+                                    </div>
+                                    <div class="box-container" href="students-leave-lists.html">
+                                        <p class="txt-title g-txt-title">幼儿园-小班</p>
+                                        <div class="small-box">
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+                                            <li class="item-box">
+                                                <p class="txt-content small-txt-title"> 一班</p>
+                                                <p class="txt-content icon-container">
+                                                    <img src="../../src/img/class-icon.png">
+                                                </p>
+                                                <p class="txt-content"> 全班学生 5</p>
+                                                <p class="txt-content"> 今日到园 4</p>
+                                                <p class="txt-content"> 平安离园 4</p>
+                                                <p class="txt-content u-txt-radius"> 目前在园 0</p>
+                                                <!--</ul>-->
+                                            </li>
+
+
+                                        </div>
+                                        <!--<div class="weui-cell__ft txt-color-lightblack">7人</div>-->
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide list-group swiper-slide-next" style="width: 1920px;">
+                                    <div class="weui-cells">
+                                        <ul class="class-lists-container">
+                                            <li class="lists-item">
+                                                <a href="teachers-plansLists.html">
+                                                    <div class="weui-cell">
+                                                        <div class="weui-cell__hd weui-grids">
+                                                            <div class="weui-grid js_grid">
+                                                                <div class="weui-grid__icon">
+                                                                    <img src="../../src/img/head.jpg">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="weui-cell__bd">
+                                                            <p class="txt-title">语文班</p>
+                                                            <p class="txt-content">0-12</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="lists-item">
+                                                <a href="teachers-plansLists.html">
+                                                    <div class="weui-cell">
+                                                        <div class="weui-cell__hd weui-grids">
+                                                            <div class="weui-grid js_grid">
+                                                                <div class="weui-grid__icon">
+                                                                    <img src="../../src/img/head.jpg">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="weui-cell__bd">
+                                                            <p class="txt-title">语文班</p>
+                                                            <p class="txt-content">0-12</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tabs contents -->
+        </div>
+    </div>
+    <!-- 首页内容 -->
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../../src/js/jquery-2.1.4.js"></script>
+<script src="../../src/js/jquery-weui.min.js"></script>
+<script src="../../src/js/fastclick.js"></script>
+<script src="../../src/js/swiper.js"></script>
+<script src="../../src/js/swiper.jquery.min.js"></script>
+<!-- 基础库文件 -->
+
+<script>
+
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+
+    //tab页js代码
+    var mySwiper = new Swiper('.swiper-container',{
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        mousewheelControl: true,
+        freeMode: true,
+        autoHeight:true,
+        onTouchMove: function(swiper){
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+        },
+        onTouchEnd: function(swiper) {
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+        }
+    });
+    var mySwiper2 = new Swiper('.swiper-container2',{
+        onTransitionEnd: function(swiper){
+            $('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+            $('.swiper-container2 .swiper-slide-active').css('height','100%').siblings('.swiper-slide').css('height','0px');
+            mySwiper.update();
+            $('.tabs-title a').eq(mySwiper2.activeIndex).addClass('tabs-title-on').siblings('a').removeClass('tabs-title-on');
+        }
+
+    });
+
+    $('.tabs-title a').click(function(){
+        $(this).addClass('tabs-title-on').siblings('a').removeClass('tabs-title-on');
+        mySwiper2.slideTo($(this).index(), 500, false)
+        $('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+        $('.swiper-container2 .swiper-slide-active').css('height','100%').siblings('.swiper-slide').css('height','0px');
+        mySwiper.update();
+    });
+    //tab页js代码
+    $('.weui-cell').bind('click',function () {
+        $(this).parent().siblings().children('.lists-container').hide();
+        $(this).parent().children('.lists-container').toggle();
+    })
+
+
+</script>
+
+</body>
+</html>

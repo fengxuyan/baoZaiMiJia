@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智教云移动端</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../../src/css/weui.min.css">
+    <link rel="stylesheet" href="../../src/css/jquery-weui.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../../src/css/public.css">
+
+    <style>
+        .notice-details{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .notice-details img{
+            width: 95%;
+            margin-top: 20px;
+        }
+        .notice-container{
+            width: 80%;
+            height: 400px;
+            position: absolute;
+            top: 80px;
+            left: 10%;
+            overflow: auto;
+            overflow-x: hidden;
+        }
+        .notice-container p{
+            width: 100%;
+            word-break:break-all;
+        }
+        .notice-container .title{
+            text-align: center;
+        }
+        .notice-container .content{
+            text-align: left;
+            text-indent: 32px;
+            margin-top: 10px;
+        }
+        .notice-container .name{
+            text-align: right;
+            margin-top: 10px;
+        }
+        .notice-container .time{
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+
+        <div class="notice-details">
+            <img src="../../src/img/notice-details.png" alt="notice">
+
+            <div class="notice-container">
+                <p class="title txt-title-darkblack">园所公告</p>
+                <p class="content txt-content">WeUI 的最大特点是它只提供UI组件，并不会对项目所使用的框架和其他库有任何的限制，几乎可以在任何环境下使用。无论你的项目是基于jQuery，还是 React, Angular, Vue， 你都会发现 jQuery WeUI 能非常方便的和他们结合使用。既是你的项目是一个有很悠久历史的老项目，也几乎可以做到拿来即用。</p>
+                <p class="name txt-content">幼儿园早教机构名称</p>
+                <p class="time txt-content">2018-3-9 9:50</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- 首页内容 -->
+
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../../src/js/jquery-2.1.4.js"></script>
+<script src="../../src/js/jquery-weui.min.js"></script>
+<script src="../../src/js/fastclick.js"></script>
+<script src="../../src/js/swiper.js"></script>
+<!-- 基础库文件 -->
+
+<script>
+
+    $(function () {
+
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+
+    });
+
+</script>
+
+</body>
+</html>

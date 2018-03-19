@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智教云移动端</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../../src/css/weui.min.css">
+    <link rel="stylesheet" href="../../src/css/jquery-weui.css">
+    <link rel="stylesheet" href="../../src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../../src/css/public.css">
+    <link rel="stylesheet" href="personal-assistant-css/personal-assistant.css">
+
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+
+        <!-- tabs -->
+        <div class="weui-flex tabs-title">
+            <a class="weui-flex__item txt-title tabs-title-on">内部交流</a>
+            <a class="weui-flex__item txt-title">教学百科</a>
+        </div>
+        <!-- tabs -->
+
+        <!-- tabs contents -->
+        <div class="swiper-container swiper-container-vertical swiper-container-free-mode swiper-container-content">
+            <div class="swiper-wrapper w">
+                <div class="swiper-slide d swiper-slide-active">
+                    <div class="init-loading list-group-item text-center" style="display: none;"></div>
+                    <div class="swiper-container2 swiper-container-horizontal">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide list-group swiper-slide-active">
+                                <div class="communication">
+                                    <p>该板块正在建设中...</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide list-group swiper-slide-next">
+
+                                <a href="encyclopedia-details.html" class="list-group-item">
+                                    <p class="con txt-title">教学百科</p>
+                                    <p class="arrow"><img src="../../src/img/right-arrow.png" alt="arrow"></p>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tabs contents -->
+
+        </div>
+        <!-- 首页内容 -->
+
+    </div>
+
+
+
+</div>
+
+
+    <!-- 基础库文件 -->
+    <script src="../../src/js/jquery-2.1.4.js"></script>
+    <script src="../../src/js/jquery-weui.min.js"></script>
+    <script src="../../src/js/fastclick.js"></script>
+    <script src="../../src/js/swiper.js"></script>
+    <script src="../../src/js/swiper.jquery.min.js"></script>
+    <!-- 基础库文件 -->
+
+    <script>
+
+        $(function () {
+            // 解决ios端click事件300毫秒延迟
+            FastClick.attach(document.body);
+        });
+
+        //tab页js代码
+        var mySwiper = new Swiper('.swiper-container',{
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            mousewheelControl: true,
+            freeMode: true,
+            onTouchMove: function(swiper){
+                var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+                var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+            },
+            onTouchEnd: function(swiper) {
+                var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+                var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+            }
+        });
+        var mySwiper2 = new Swiper('.swiper-container2',{
+            onTransitionEnd: function(swiper){
+                $('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+                $('.swiper-container2 .swiper-slide-active').css('height','auto').siblings('.swiper-slide').css('height','0px');
+                mySwiper.update();
+                $('.tabs-title a').eq(mySwiper2.activeIndex).addClass('tabs-title-on').siblings('a').removeClass('tabs-title-on');
+            }
+
+        });
+
+        $('.tabs-title a').click(function(){
+            $(this).addClass('tabs-title-on').siblings('a').removeClass('tabs-title-on');
+            mySwiper2.slideTo($(this).index(), 500, false)
+            $('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+            $('.swiper-container2 .swiper-slide-active').css('height','auto').siblings('.swiper-slide').css('height','0px');
+            mySwiper.update();
+        });
+        //tab页js代码
+
+    </script>
+
+</body>
+</html>

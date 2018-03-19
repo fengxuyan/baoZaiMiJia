@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生资料详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../../src/css/weui.min.css">
+    <link rel="stylesheet" href="../../src/css/jquery-weui.css">
+    <link rel="stylesheet" href="../../src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../../src/css/public.css">
+    <style>
+
+
+        .weui-grid:before, .weui-grids:after, .weui-grid:after, .weui-grids:before {
+            border: 0;
+        }
+
+        .weui-cell__hd img {
+            border-radius: 50%;
+        }
+
+        .weui-grid__icon {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .weui-cell:before {
+            border-top: 0;
+        }
+
+        .weui-cell {
+            display: block;
+            overflow: hidden;
+        }
+
+        .weui-grids {
+            float: left;
+            padding: 0;
+            width: auto;
+        }
+
+        .pingjia-pos {
+            padding-left: 0.5rem;
+        }
+
+        .performance-box {
+            display: block;
+            border-top: 1px solid #ddd;
+        }
+
+        .txt-size-medium {
+            text-align: center;
+        }
+
+        .view-btn {
+            margin: 0 auto;
+            padding: 0.3rem 1rem;
+            width: 50%;
+            background: rgb(231, 145, 76);;
+            text-align: center;
+            line-height: 1rem;
+
+        }
+    </style>
+
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+
+    <!-- lists contents -->
+    <div class="weui-cell">
+        <div class="weui-cell__hd weui-grids">
+            <a href="" class="weui-grid js_grid">
+                <div class="weui-grid__icon">
+                    <img src="../../src/img/head.jpg">
+                </div>
+            </a>
+        </div>
+        <div class="weui-cell__bd pingjia-pos">
+            <p class="txt-title">姓名：小睡</p>
+            <p class="txt-content">乳名：</p>
+            <p class="txt-content">生日：2018-02-03</p>
+            <p class="txt-content">年龄：2岁</p>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <p class="txt-content">报名课程：语文</p>
+        <p class="txt-content">开始时间：2018-02-03</p>
+        <p class="txt-content">结束时间：2018-02-03</p>
+    </div>
+    <div class="weui-cell performance-box">
+        <div class="weui-flex txt-size-medium">
+            <div class="weui-flex__item">总课时</div>
+            <div class="weui-flex__item">已上课时</div>
+            <div class="weui-flex__item">剩余课时</div>
+            <div class="weui-flex__item">请假课时</div>
+        </div>
+        <div class="weui-flex txt-size-medium">
+            <div class="weui-flex__item">99</div>
+            <div class="weui-flex__item">19</div>
+            <div class="weui-flex__item">80</div>
+            <div class="weui-flex__item">0</div>
+        </div>
+    </div>
+    <div class="weui-cell performance-box">
+        <p class="txt-title">家庭成员</p>
+        <p class="txt-content txt-right">关系：爸爸</p>
+        <p class="txt-content">成员姓名：语文</p>
+        <p class="txt-content">出生日期：2018-02-03</p>
+        <p class="txt-content">联系电话：2018-02-03</p>
+        <p class="txt-content">联系地址：2018-02-03</p>
+    </div>
+    <div class="weui-cell performance-box">
+        <p class="txt-title">家庭成员</p>
+        <p class="txt-content txt-right">关系：爸爸</p>
+        <p class="txt-content">成员姓名：语文</p>
+        <p class="txt-content">出生日期：2018-02-03</p>
+        <p class="txt-content">联系电话：2018-02-03</p>
+        <p class="txt-content">联系地址：2018-02-03</p>
+    </div>
+    <div class="weui-cell view-btn">
+        <a href="student-course-details.html" class="txt-color-white">
+            <p class="txt-size-big">查看课时详情</p>
+        </a>
+    </div>
+
+</div>
+
+<!-- 首页内容 -->
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../../src/js/jquery-2.1.4.js"></script>
+<!--<script src="src/js/jquery-weui.min.js"></script>-->
+<script src="../../src/js/fastclick.js"></script>
+<!--<script src="src/js/swiper.js"></script>-->
+<!--<script src="src/js/swiper.jquery.min.js"></script>-->
+<!-- 基础库文件 -->
+<script>
+
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+
+</script>
+
+</body>
+</html>
