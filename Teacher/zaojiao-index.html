@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智教云移动端</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../src/css/weui.min.css">
+    <link rel="stylesheet" href="../src/css/jquery-weui.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../src/css/public.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+
+        <!-- 轮播 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper index-banner">
+                <a href="javascript:void(0)" class="swiper-slide">
+                    <img src="../src/img/banner1.jpg" alt="">
+                    <p class="index-banner-details">banner1</p>
+                </a>
+                <a href="javascript:void(0)" class="swiper-slide">
+                    <img src="../src/img/banner2.jpg" alt="">
+                    <p class="index-banner-details">banner2</p>
+                </a>
+                <a href="javascript:void(0)" class="swiper-slide">
+                    <img src="../src/img/banner3.jpg" alt="">
+                    <p class="index-banner-details">banner3</p>
+                </a>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 轮播 -->
+
+        <!-- 导航条 -->
+        <div class="weui-flex index-nav">
+            <a href="center-activities/center-activities.html" class="weui-flex__item">
+                <img src="../src/img/yuansuodongtai.png" alt="yuansuodongtai" width="60" height="60">
+                <p class="txt-title">中心动态</p>
+            </a>
+            <a href="class-management/center-management.html" class="weui-flex__item">
+                <img src="../src/img/yuansuoguanli.png" alt="yuansuoguanli" width="60" height="60">
+                <p class="txt-title">班级管理</p>
+            </a>
+            <a href="home-school-interactive/home-school-interactive.html" class="weui-flex__item">
+                <img src="../src/img/jiaxiaohudong.png" alt="jiaxiaohudong" width="60" height="60">
+                <p class="txt-title">家校互动</p>
+            </a>
+            <a href="personal-assistant/personal-assistant.html" class="weui-flex__item">
+                <img src="../src/img/gerenzhushou.png" alt="gerenzhushou" width="60" height="60">
+                <p class="txt-title">教师助手</p>
+            </a>
+        </div>
+        <!-- 导航条 -->
+
+        <!-- 首页内容区域 -->
+
+        <div class="list-box tabs-title">
+            <div class="txt-title txt-center">早教机构</div>
+            <div class="icon-box"><img src="../src/img/zhexian.png"></div>
+        </div>
+        <div class="weui-flex list-box tabs-box">
+            <div class="weui-flex__item txt-title txt-title-on">中心动态</div>
+            <div class="weui-flex__item txt-title">班级管理</div>
+            <div class="weui-flex__item txt-title">家校互动</div>
+            <div class="weui-flex__item txt-title">教师助手</div>
+        </div>
+        </div>
+        <!-- 首页内容区域 -->
+
+    </div>
+    <!-- 首页内容 -->
+
+
+    <!-- 公共底部 -->
+    <div class="weui-tabbar">
+        <a href="zaojiao-index.html" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="../src/img/index-icon.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="news/news.html" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="../src/img/message-icon.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">消息</p>
+        </a>
+        <a href="circle/circle.html" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="../src/img/quanzi-icon.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">圈子</p>
+        </a>
+        <a href="information/information.html" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="../src/img/zixun-icon.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">资讯</p>
+        </a>
+        <a href="personal/personal.html" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="../src/img/mine-icon.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">我的</p>
+        </a>
+    </div>
+    <!-- 公共底部 -->
+
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../src/js/jquery-2.1.4.js"></script>
+<script src="../src/js/jquery-weui.min.js"></script>
+<script src="../src/js/fastclick.js"></script>
+<script src="../src/js/swiper.js"></script>
+<script src="../src/js/tabbar-class.js"></script>
+
+<!-- 基础库文件 -->
+
+<script>
+
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+
+    var mySwiper = new Swiper('.swiper-container',{
+        //autoplay:3000,
+        pagination : '.swiper-pagination',
+        paginationHide :true,
+        loop : true,
+    })
+
+</script>
+
+</body>
+</html>
