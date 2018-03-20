@@ -1,0 +1,172 @@
+/*home-school-interactive.html*/
+.interactive .tabs-title {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #F78C3C;
+}
+
+.interactive .tabs-title .tabs-title-on {
+    border-bottom: 2px solid #F78C3C;
+}
+.interactive .weui-cells{
+    margin-top: 0;
+}
+.interactive .swiper-container, .swiper-container2 {
+    height: 100%;
+}
+.interactive .weui-grid {
+    /* position: relative; */
+    float: left;
+    padding: 0;
+    width:auto;
+}
+.interactive .weui-cell__hd img{
+    border-radius: 50%;
+}
+.weui-grid:before, .weui-grids:after,.weui-grid:after,.weui-grids:before{
+    border:0 ;
+}
+.interactive .weui-cell{
+    border-bottom:1px solid #e5e5e5;
+}
+.interactive .weui-grid__icon {
+    width:1.5rem;
+    height:1.5rem;
+}
+.interactive .weui-cell__bd{
+    padding-left: 0.5rem;
+}
+/*teacher-evalution.html*/
+.teacherEvalution .weui-grid {
+    float: left;
+    padding: 0;
+    width: auto;
+}
+
+.teacherEvalution .weui-cell__hd img {
+    border-radius: 50%;
+}
+.teacherEvalution .weui-grid__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.teacherEvalution .time-box {
+    position: absolute;
+    font-size: 0.4rem;
+    bottom: 0;
+    right: 0;
+    padding-right: 1rem;
+}
+.teacherEvalution .weui-cell:before {
+    border-top: 0;
+}
+.teacherEvalution .weui-cell {
+    border-bottom: 1px solid #e5e5e5;
+}
+.pingjia-pos {
+    padding-left: 0.5rem;
+}
+/*student-files-classLists.html*/
+.filesClassLists .weui-grid {
+    /* position: relative; */
+    float: left;
+    padding: 0;
+    width:auto;
+}
+.filesClassLists .weui-cell__hd img{
+    border-radius: 50%;
+}
+
+.filesClassLists .weui-cell{
+    border-bottom:1px solid #e5e5e5;
+}
+.filesClassLists .weui-grid__icon {
+    width:1.5rem;
+    height:1.5rem;
+}
+.filesClassLists .weui-cell__bd{
+    padding-left: 0.5rem;
+}
+.filesClassLists .lists-container{
+    display: none;
+    overflow: hidden;
+    padding: 0.3rem 0;
+    text-align: center;
+    border-bottom:1px solid #e5e5e5;
+}
+.filesClassLists .lists-container .lists-box .img-box{
+    display: inline-block;
+    width:2.5rem;
+    height:2.5rem;
+}
+.filesClassLists .lists-container .lists-box{
+    float:left;
+    width:33%;
+}
+.filesClassLists .img-box img{
+    border-radius: 50%;
+    width:100%;
+    height:100%;
+}
+/*student-files-details.html*/
+.filesDetails .weui-grid {
+    float: left;
+    padding: 0;
+    width: auto;
+}
+
+
+.filesDetails .weui-cell__hd img {
+    border-radius: 50%;
+}
+.filesDetails .weui-grid__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.filesDetails .weui-cell:before {
+    border-top: 0;
+}
+.filesDetails .weui-cell{
+    overflow: hidden;
+}
+.filesDetails .pingjia-pos {
+    padding-left: 0.5rem;
+}
+.filesDetails .performance-box{
+    display: block;
+}
+/*parents-recommend-details.html*/
+
+.recommendDetails.weui-tab{
+    background: rgb(244,244,244);
+}
+.recommendDetails.weui-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recommendDetails .container{
+    width:95%;
+    height: 97%;
+    background:#fff;
+}
+.recommendDetails .details-container{
+    position: relative;
+}
+.recommendDetails .details-container p{
+    padding:0.5rem 0 0.7rem 0.5rem;
+}
+
+.recommendDetails .icon{
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+
+.recommendDetails .icon img{
+    width:6.5rem;
+}
