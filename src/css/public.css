@@ -2,6 +2,8 @@ body, html {
     height: 100%;
     -webkit-tap-highlight-color: transparent;
     font-family: '微软雅黑','Microsoft YaHei';
+    margin:0;
+    padding:0;
 }
 li,a ,ul{
     list-style-type: none;
