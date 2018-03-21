@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="30bbc28f-f5f8-4c16-b47c-85d8baf8a082" name="localhost" url="http://192.168.1.74:8080/zhijiaoyun">
+      <webServer id="30bbc28f-f5f8-4c16-b47c-85d8baf8a082" name="localhost" url="http://192.168.100.152:8080/zhijiaoyun">
         <fileTransfer port="0" mountedRoot="D:\zhijiaoyun" accessType="MOUNT" />
       </webServer>
     </option>
