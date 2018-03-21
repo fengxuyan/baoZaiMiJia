@@ -189,7 +189,7 @@
     border-top: 1px solid #ddd;
 }
 
-/*teachers-plansLists.html*/
+/*students-leaveLogs.html*/
 .weui-cells{
     margin-top: 0;
 }
@@ -293,7 +293,7 @@
 .chooseDate .g-details-txt {
     text-align: left;
 }
-/*teachers-plansLists-details.html*/
+/*students-leaveLogs-details.html*/
 .plansListsDetials .weui-cells{
     margin-top: 0;
 }

@@ -96,9 +96,21 @@ li,a ,ul{
 }
 /*文字向右*/
 .txt-right{
-    float:right;
+    text-align:right;
 }
 /*文字居中*/
 .txt-center{
     text-align: center;
+}
+/*文字居左*/
+.txt-left{
+    text-align: left;
+}
+/*向右浮动*/
+.g-right{
+    float: right;
+}
+/*向左浮动*/
+.g-left{
+   float: left;
 }

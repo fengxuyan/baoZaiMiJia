@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花同学的请假记录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../../src/css/weui.min.css">
+    <link rel="stylesheet" href="../../src/css/jquery-weui.css">
+    <link rel="stylesheet" href="../../src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../../src/css/public.css">
+    <link rel="stylesheet" href="center-management.css">
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+
+        <!-- tabs contents -->
+
+        <div class="weui-cells">
+            <a class="weui-cell weui-cell_access" href="students-leaveLogs-details.html">
+                <div class="weui-cell__bd">
+                    <p class="txt-title">花同学请假</p>
+                </div>
+                <div class="weui-cell__ft txt-size-small txt-center">2018-02-03</div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="students-leaveLogs-details.html">
+                <div class="weui-cell__bd">
+                    <p class="txt-title">花同学请假</p>
+                </div>
+                <div class="weui-cell__ft txt-size-small txt-center">2018-02-02</div>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+<!-- 首页内容 -->
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../../src/js/jquery-2.1.4.js"></script>
+<!--<script src="src/js/jquery-weui.min.js"></script>-->
+<script src="../../src/js/fastclick.js"></script>
+<!--<script src="src/js/swiper.js"></script>-->
+<!--<script src="src/js/swiper.jquery.min.js"></script>-->
+<!--<script src="src/js/rem.js"></script>-->
+<!-- 基础库文件 -->
+
+<script>
+
+    $('.weui-cell').bind('click',function () {
+        $(this).parent().siblings().children('.lists-container').hide();
+        $(this).parent().children('.lists-container').toggle();
+    })
+
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+
+
+</script>
+
+</body>
+</html>
