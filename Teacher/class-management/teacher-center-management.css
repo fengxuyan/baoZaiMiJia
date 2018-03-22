@@ -262,3 +262,41 @@
 .leaveLogsDetails .details-container{
     padding:0 0.5rem;
 }
+/*signIn-history.html*/
+.teacherRosterDetails .weui-cell__hd img {
+    border-radius: 50%;
+}
+
+.teacherRosterDetails .weui-grid__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.teacherRosterDetails .weui-cell:before {
+    border-top: 0;
+}
+
+.teacherRosterDetails .weui-cell {
+    display: block;
+    overflow: hidden;
+}
+
+.teacherRosterDetails .weui-grids {
+    float: left;
+    padding: 0;
+    width: auto;
+}
+
+.teacherRosterDetails .pingjia-pos {
+    padding-left: 0.5rem;
+}
+
+.teacherRosterDetails .performance-box {
+    display: block;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.teacherRosterDetails .txt-size-medium {
+    text-align: center;
+}
