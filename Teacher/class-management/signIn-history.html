@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>教学计划详情</title>
+    <title>签到信息</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- 基础库文件 -->
@@ -14,26 +14,31 @@
     <link rel="stylesheet" href="../../src/css/public.css">
     <link rel="stylesheet" href="teacher-center-management.css">
 </head>
-<body class="plansListsDetials" ontouchstart>
-<div class="top-txt">
-    <p class="txt-title-darkblack txt-center">语文2班</p>
-    <span class="txt-content txt-time">15:00-23:00</span>
-</div>
-<div class="weui-tab">
+<body ontouchstart>
+
+<div class="teacherRosterDetails weui-tab">
 
     <!-- 首页内容 -->
-    <div class="container">
-        <!-- tabs contents -->
-        <ul class="details-container">
-            <li class="txt-title">教学目标</li>
-            <li class="txt-content">嚣张:111111115</li>
-            <li class="txt-title">教学内容</li>
-            <li class="txt-content">联系方式：18888888888</li>
-            <li class="txt-title">教学计划</li>
-            <li class="txt-content">联系方式：18888888888</li>
-        </ul>
+
+    <!-- lists contents -->
+    <div class="weui-cell">
+        <p class="txt-content">班级：语文</p>
+        <p class="txt-content">课程：语文<span class="g-right">2018-02-03 20:00</span></p>
+    </div>
+    <div class="weui-cell performance-box">
+        <div class="weui-flex txt-size-medium">
+            <div class="weui-flex__item">签到人数</div>
+            <div class="weui-flex__item">请假人数</div>
+            <div class="weui-flex__item">其他人数</div>
+        </div>
+        <div class="weui-flex txt-size-medium">
+            <div class="weui-flex__item">99</div>
+            <div class="weui-flex__item">19</div>
+            <div class="weui-flex__item">80</div>
+        </div>
     </div>
 </div>
+
 <!-- 首页内容 -->
 </div>
 
@@ -44,17 +49,13 @@
 <script src="../../src/js/fastclick.js"></script>
 <!--<script src="src/js/swiper.js"></script>-->
 <!--<script src="src/js/swiper.jquery.min.js"></script>-->
-<!--<script src="src/js/rem.js"></script>-->
 <!-- 基础库文件 -->
-
 <script>
-
 
     $(function () {
         // 解决ios端click事件300毫秒延迟
         FastClick.attach(document.body);
     });
-
 
 </script>
 
