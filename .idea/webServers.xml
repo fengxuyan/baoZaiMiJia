@@ -2,8 +2,16 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="31e3013f-94a0-4ef5-bc84-beca860352c4" name="localhost" url="http://192.168.100.22:8080/zhijiaoyun/management/kindergarten-index.html">
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <webServer id="30bbc28f-f5f8-4c16-b47c-85d8baf8a082" name="localhost" url="http://192.168.100.181:8080/zhijiaoyun">
+        <fileTransfer port="0" mountedRoot="E:\zhijiaoyun" accessType="MOUNT" />
+=======
+=======
+>>>>>>> dec669dd71509a1d9e871aef9bfae33c19c6ed48
+      <webServer id="30bbc28f-f5f8-4c16-b47c-85d8baf8a082" name="localhost" url="http://192.168.100.152:8080/zhijiaoyun">
         <fileTransfer port="0" mountedRoot="D:\zhijiaoyun" accessType="MOUNT" />
+>>>>>>> dec669dd71509a1d9e871aef9bfae33c19c6ed48
       </webServer>
     </option>
   </component>
