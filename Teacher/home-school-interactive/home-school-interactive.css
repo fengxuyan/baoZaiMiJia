@@ -200,5 +200,46 @@
     width:6.5rem;
 }
 
+/*homelife.html*/
 
+.banner-title-container{
 
+}
+.banner-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.banner-box img{
+    width:100%;
+}
+
+.banner-txt{
+    position: absolute;
+    /*top:1rem;*/
+}
+
+.homeLife .content-container{
+
+}
+.homeLife .imgLists-container{
+    overflow: hidden;
+    float: left;
+    /*height:150px;*/
+        /*text-align: center;*/
+}
+.homeLife .img-box{
+    /*float:left;*/
+    /*width:33%;*/
+}
+.homeLife .img-box img{
+    width:100%;
+    /*float:left;*/
+}
+.imgLists-container img{
+    /*float: left;*/
+    /*width: 33%;*/
+
+}

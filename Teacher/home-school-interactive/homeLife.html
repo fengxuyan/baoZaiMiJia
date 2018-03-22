@@ -2,9 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>资料详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../../src/css/weui.min.css">
+    <link rel="stylesheet" href="../../src/css/jquery-weui.css">
+    <link rel="stylesheet" href="../../src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../../src/css/public.css">
+    <link rel="stylesheet" href="home-school-interactive.css">
+    <link rel="stylesheet prefetch"
+          href="http://www.17sucai.com/preview/483666/2018-02-28/PhotoSwipe4.1.1Demo.rar/css/photoswipe.css">
+
 </head>
-<body>
+<body ontouchstart>
+<script>
+
+
+//    $(window).width()
+
+</script>
+
+<div class="homeLife weui-tab">
+
+    <!-- 首页内容 -->
+
+    <!-- lists contents -->
+    <div class="banner-title-container">
+        <div class="banner-box">
+            <img src="../../src/img/homelife-banner.png">
+            <p class="banner-txt txt-title">2018年03月第4周-宝贝家生活</p>
+        </div>
+    </div>
+
+        <div class="content-container">
+
+        <p class="txt-title">在家表现：</p>
+        <p class="txt-content">niiekekkekekkeigje</p>
+        <div class="imgLists-container">
+            <img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
+            <img src="../../src/img/about-logo.png" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
+            <img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
+            <img src="../../src/img/ysgg.png" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
+            <img src="../../src/img/banner1.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
+            <img src="../../src/img/myself-background.png" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
+            <img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="weui-cell">
+        <p class="txt-content">班级：语文</p>
+        <p class="txt-content">课程：语文<span class="g-right">2018-02-03 20:00</span></p>
+    </div>
+    <div class="weui-cell performance-box">
+        <div class="weui-flex txt-size-medium">
+            <div class="weui-flex__item">签到人数</div>
+            <div class="weui-flex__item">请假人数</div>
+            <div class="weui-flex__item">其他人数</div>
+        </div>
+        <div class="weui-flex txt-size-medium">
+            <div class="weui-flex__item">99</div>
+            <div class="weui-flex__item">19</div>
+            <div class="weui-flex__item">80</div>
+        </div>
+    </div>
+</div>
+
+<!-- 首页内容 -->
+
+
+
+<!-- 基础库文件 -->
+<script src="../../src/js/jquery-2.1.4.js"></script>
+<!--<script src="src/js/jquery-weui.min.js"></script>-->
+<script src="../../src/js/fastclick.js"></script>
+<!--<script src="src/js/swiper.js"></script>-->
+<!--<script src="src/js/swiper.jquery.min.js"></script>-->
+<!-- 基础库文件 -->
+<script>
+//    javascript自动按比例显示图片，按比例压缩图片显示
+function AutoResizeImage(maxWidth,maxHeight,objImg){
+    var img = new Image();
+    img.src = objImg.src;
+    var hRatio;
+    var wRatio;
+    var Ratio = 1;
+    var w = img.width;
+    var h = img.height;
+    wRatio = maxWidth / w;
+    hRatio = maxHeight / h;
+
+
+    var g_left;
+    if (maxWidth ==0 && maxHeight==0){
+        Ratio = 1;
+    }else if (maxWidth==0){//
+        if (hRatio<1) Ratio = hRatio;
+    }else if (maxHeight==0){
+        if (wRatio<1) Ratio = wRatio;
+    }else if (wRatio<1 || hRatio<1){
+        Ratio = (wRatio<=hRatio?wRatio:hRatio);
+    }
+    if (Ratio<1){
+        w = w * Ratio;
+        h = h * Ratio;
+    }
+    objImg.height = h;
+    objImg.width = w;
+
+    if($(window).width()>400){
+        g_left=($(window).width()-w*4)/2-4;
+        $('.imgLists-container').css('margin-left',g_left+'px');
+    }else{
+        g_left=($(window).width()-w*3)/2-3;
+        $('.imgLists-container').css('margin-left',g_left+'px');
+    }
+    $('.imgLists-container img').css('padding','0 2px 2px 0');
+
+}
+
+    $(function () {
+        console.log(($(window).width())); //浏览器当前窗口可视区域宽度
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+
+
+
+    });
+
+</script>
 
 </body>
 </html>
