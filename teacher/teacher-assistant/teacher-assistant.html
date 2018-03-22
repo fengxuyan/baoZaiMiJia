@@ -74,7 +74,14 @@
                             <div class="swiper-slide list-group swiper-slide-active" style="width: 1920px;">
 
                                 <div class="weui-cells">
-                                    教学百科
+                                    <div class="weui-cells">
+                                        <a class="weui-cell weui-cell_access" href="teaching-details.html">
+                                            <div class="weui-cell__bd">
+                                                <p class="txt-title">教学百科</p>
+                                            </div>
+                                            <div class="weui-cell__ft txt-size-small"></div>
+                                        </a>
+                                    </div>
                                 </div>
 
                             </div>
@@ -112,7 +119,6 @@
         slidesPerView: 'auto',
         mousewheelControl: true,
         freeMode: true,
-        autoHeight:true,
         onTouchMove: function(swiper){
             var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
             var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
@@ -202,7 +208,7 @@
             }
         ],
         onSelected: function (view, date, data) {
-            location.href = 'teachers-plansLists-details.html';
+            location.href = 'class-list.html';
         }
     });
 

@@ -1,0 +1,163 @@
+/*circle.html*/
+.circle .weui-tabbar{
+    background-color: rgb(26,27,31);
+}
+.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{
+    /*color: rgb(153,152,152);*/
+    color: #fff;
+}
+.circle .list-group-item{
+    float: left;
+    width: 94%;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+.circle .list-group-item.txt-align{
+    display: flex;
+    align-items: center;
+}
+.circle .list-group-item dl{
+    float: left;
+}
+.circle .list-group-item .img{
+    width: 12%;
+    margin-right: 6px;
+}
+.circle .list-group-item .img img{
+    width: 40px;
+    height: 40px;
+}
+.circle .list-group-item .details{
+    width: 62%;
+}
+.circle .list-group-item .date{
+    width: 16%;
+    margin-top: 16px;
+}
+.circle .list-group-item p.arrow img{
+    vertical-align: middle;
+}
+
+
+/*carema.html*/
+.carema{
+    margin:0;
+    padding:0;
+}
+.carema .imageDiv {
+    /*display: inline-block;*/
+    float: left;
+    /*width: 100px;*/
+    /*height: 100px;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*border: 1px dashed darkgray;*/
+    background: #f8f8f8;
+    position: relative;
+    overflow: hidden;
+}
+.carema .imageDiv img{
+    margin-right: 6px;
+}
+
+.carema .cover {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.carema .cover>.delbtn {
+    color: red;
+    font-size: 20px;
+}
+
+.carema .imageDiv:hover .cover {
+    display: block;
+}
+
+.carema .addImages {
+    /*display: inline-block;*/
+    float: left;
+    width: 50px;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px dashed darkgray;
+    background: #f8f8f8;
+    position: relative;
+    overflow: hidden;
+}
+
+.carema .text-detail {
+    width: 100%;
+    height: 50;
+    line-height: 50px;
+    text-align: center;
+}
+
+.carema .text-detail > span {
+    font-size: 40px;
+}
+
+.carema .file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.carema .text-container{
+    margin: 8px;
+    width: 95%;
+    height: 100px;
+    border-bottom: 1px solid #eee;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 6px;
+    margin-bottom: 10px;
+    outline: none;
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+.carema .picDiv{
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+.carema .text-title{
+    width: 100%;
+    height: 45px;
+    background: rgb(26,27,31);
+    text-align: center;
+    line-height: 45px;
+}
+.carema .text-title .cancel{
+    width: 18%;
+    height: 45px;
+    float: left;
+    color: #fff;
+}
+.carema .text-title .text{
+    width: 64%;
+    height: 45px;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+}
+.carema .text-title .publish{
+    width: 18%;
+    height: 45px;
+    float: left;
+    color: #07bb07;
+}

@@ -1,0 +1,13 @@
+.details-container{
+    padding: 8px;
+    border-bottom: 1px solid #eeeeee;
+}
+.details-container li{
+    list-style: none;
+}
+.zjy-content{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
