@@ -1,5 +1,5 @@
 /*home-school-interactive.html*/
-.interactive .tabs-title {
+.Teacher-interactive .tabs-title {
     text-align: center;
     width: 100%;
     height: 40px;
@@ -7,37 +7,66 @@
     border-bottom: 1px solid #F78C3C;
 }
 
-.interactive .tabs-title .tabs-title-on {
+.Teacher-interactive .tabs-title .tabs-title-on {
     border-bottom: 2px solid #F78C3C;
 }
-.interactive .weui-cells{
+.Teacher-interactive .weui-cells{
     margin-top: 0;
 }
-.interactive .swiper-container, .swiper-container2 {
+.swiper-container, .swiper-container2 {
     height: 100%;
 }
-.interactive .weui-grid {
+.Teacher-interactive .weui-grid {
     /* position: relative; */
     float: left;
     padding: 0;
     width:auto;
 }
-.interactive .weui-cell__hd img{
+.Teacher-interactive .weui-cell__hd img{
     border-radius: 50%;
 }
 .weui-grid:before, .weui-grids:after,.weui-grid:after,.weui-grids:before{
     border:0 ;
 }
-.interactive .weui-cell{
+.Teacher-interactive .weui-cell{
     border-bottom:1px solid #e5e5e5;
 }
-.interactive .weui-grid__icon {
+.Teacher-interactive .weui-grid__icon {
     width:1.5rem;
     height:1.5rem;
 }
-.interactive .weui-cell__bd{
+.Teacher-interactive .weui-grid__icon img{
+   width:100%;
+}
+.Teacher-interactive .weui-cell__bd{
     padding-left: 0.5rem;
 }
+
+
+
+.Teacher-interactive .lists-container{
+    display: none;
+    overflow: hidden;
+    padding: 0.3rem 0;
+    text-align: center;
+    border-bottom:1px solid #e5e5e5;
+}
+.Teacher-interactive .lists-container .lists-box .img-box{
+    display: inline-block;
+    width:2.5rem;
+    height:2.5rem;
+}
+.Teacher-interactive .lists-container .lists-box{
+    float:left;
+    width:33%;
+}
+.Teacher-interactive .img-box img{
+    border-radius: 50%;
+    width:100%;
+    height:100%;
+}
+
+
 /*teacher-evalution.html*/
 .teacherEvalution .weui-grid {
     float: left;
@@ -170,3 +199,6 @@
 .recommendDetails .icon img{
     width:6.5rem;
 }
+
+
+
