@@ -1,0 +1,357 @@
+/*kindergarten-management.html*/
+.kindergartenManage .tabs-title {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #F78C3C;
+}
+
+.kindergartenManage .tabs-title .tabs-title-on {
+    border-bottom: 2px solid #F78C3C;
+}
+
+.kindergartenManage .weui-cells {
+    margin-top: 0;
+    overflow-y: scroll;
+}
+.kindergartenManage .weui-cells:after{
+    bottom:auto;
+}
+
+.kindergartenManage .weui-grid {
+    /* position: relative; */
+    float: left;
+    padding: 0;
+    width: auto;
+}
+
+ .weui-cell__hd img {
+    border-radius: 50%;
+}
+
+.weui-grid:before, .weui-grids:after, .weui-grid:after, .weui-grids:before {
+    border: 0;
+}
+
+.kindergartenManage .weui-cell {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.kindergartenManage .weui-grid__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.kindergartenManage .weui-cell__bd {
+    padding-left: 0.5rem;
+}
+
+.kindergartenManage .lists-container {
+    display: none;
+    overflow: hidden;
+    padding: 0.3rem 0;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.kindergartenManage .img-box {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.kindergartenManage .lists-container .lists-box {
+    float: left;
+    width: 33%;
+}
+
+.kindergartenManage .img-box img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.kindergartenManage .performance-box {
+    display: block;
+    border-top: 1px solid #ddd;
+}
+
+.kindergartenManage .txt-size-medium {
+    text-align: center;
+}
+
+.kindergartenManage .small-box {
+    /*overflow: hidden;*/
+    text-align: center;
+    margin: 0 auto;
+    /*border:1px solid green;*/
+    /*margin:0.5rem;*/
+
+}
+
+.kindergartenManage .small-box .item-box {
+
+    display: inline-block;
+    float: left;
+    width: 44%;
+    /*background: #fff;*/
+    text-align: center;
+    margin: 3%;
+    margin-top: 0;
+    /*margin-bottom: 0;*/
+
+}
+
+.kindergartenManage .box-container {
+    overflow: hidden;
+
+    background: #F4F4F4;
+    border-bottom: 1px solid #ddd;
+}
+
+.kindergartenManage .box-container:after{
+    content: '';
+    clear:both;
+}
+.kindergartenManage .g-txt-title {
+    margin-left: 3%;
+    padding: 0.3rem;
+}
+
+.kindergartenManage .txt-content {
+    background: #fff;
+}
+
+.kindergartenManage .small-txt-title {
+    background: #324FC1;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.kindergartenManage .item-box .txt-content{
+    color:#000;
+}
+.kindergartenManage .txt-content.small-txt-title{
+    color: #fff;
+}
+.kindergartenManage .u-txt-radius {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.kindergartenManage .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+.kindergartenManage .icon-container img {
+    width: 35px;
+}
+
+.kindergartenManage .swiper-container{
+    height: 100% !important;
+}
+.kindergartenManage .swiper-container2{
+    min-height: 700px;
+}
+
+
+/*kindManage-rosterdetails.html*/
+.rosterDetails .weui-grid__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.rosterDetails .weui-cell:before {
+    border-top: 0;
+}
+
+.rosterDetails .weui-cell {
+    display: block;
+    overflow: hidden;
+}
+
+.rosterDetails .weui-grids {
+    float: left;
+    padding: 0;
+    width: auto;
+}
+
+.rosterDetails .pingjia-pos {
+    padding-left: 0.5rem;
+}
+
+.rosterDetails .performance-box {
+    display: block;
+    border-top: 1px solid #ddd;
+}
+
+/*students-leaveLogs.html*/
+.weui-cells{
+    margin-top: 0;
+}
+/*choose-date.html*/
+.chooseDate .weui-tab {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+
+}
+.chooseDate #demo {
+    width: 100%;
+    /* margin: 150px auto; */
+    margin: 0 auto;
+}
+
+.chooseDate .comment-mask {
+    position: fixed;
+    /*bottom: -15rem;*/
+    background: #fff;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes myfirst {
+    from {
+        bottom: 0rem;
+    }
+    to {
+        bottom: 80%;
+    }
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    from {
+        bottom: 0rem;
+    }
+    to {
+        bottom: 80%;
+    }
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+    from {
+        bottom: 0rem;
+    }
+    to {
+        bottom: 80%;
+    }
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+    from {
+        bottom: 0rem;
+    }
+    to {
+        bottom: 80%;
+    }
+}
+
+.chooseDate .popMask {
+    background: #fff;
+    bottom: 80% !important;
+    -webkit-animation: myfirst 0.3s;
+    animation: myfirst 0.3s;
+}
+
+.chooseDate .comment-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    border-radius: 5px;
+
+    height: 2rem;
+    line-height: 2rem;
+    /*background: #fff;*/
+}
+
+.chooseDate .popBtn {
+    /*background: rgb(230, 128, 55);*/
+    font-size: 0.73rem;
+}
+
+.chooseDate .btn-title {
+    background: rgb(230, 128, 55);
+}
+
+.chooseDate .add-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 0.2rem;
+}
+
+.chooseDate .g-details-txt {
+    text-align: left;
+}
+/*students-leaveLogs-details.html*/
+.plansListsDetials .weui-cells{
+    margin-top: 0;
+}
+.plansLists .weui-cells:after{
+    border:0;
+}
+.plansLists .list-item{
+    border-bottom:1px solid #e5e5e5 ;
+}
+
+/*teacher-details-addComment.html*/
+.addComment .feedback-container textarea{
+    border:0;
+    width: 100%;
+    height: 5rem;
+    font-weight: normal;
+}
+.addComment .feedback-container{
+    position: relative;
+    padding: 0.3rem;
+    border: 1px solid #ddd;
+}
+
+.addComment .feedback-container img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+    width:3rem;
+    height:3rem;
+
+}
+.addComment .feedback-container input{
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0.5rem 0;
+}
+
+.addComment .view-btn {
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    margin-top: 40%;
+    text-align: center;
+    line-height: 1rem;
+    border-radius: 5px;
+    width: 50%;
+    background: rgb(230, 128, 55);;
+}
+
+.addComment .check-feedback p{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: normal;
+    color:rgb(230, 128, 55);;
+
+}
+.weui-cells{
+    margin-top: 0;
+}

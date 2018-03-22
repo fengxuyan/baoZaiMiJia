@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>班级管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../../src/css/weui.min.css">
+    <link rel="stylesheet" href="../../src/css/jquery-weui.css">
+    <link rel="stylesheet" href="../../src/css/calendar.css">
+    <link rel="stylesheet" href="../../src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../../src/css/public.css">
+    <link rel="stylesheet" href="teacher-center-management.css">
+    <link rel="stylesheet" href="kindergarten-management.css">
+</head>
+<body ontouchstart>
+
+<div class="centerManage weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+
+        <!-- tabs -->
+        <div class="weui-flex tabs-title">
+            <a class="weui-flex__item txt-title tabs-title-on">教学活动</a>
+            <a class="weui-flex__item txt-title">教学百科</a>
+        </div>
+        <!-- tabs -->
+
+        <!-- tabs contents -->
+        <div class="swiper-container swiper-container-vertical swiper-container-free-mode">
+            <div class="swiper-wrapper w">
+                <div class="swiper-slide d swiper-slide-active">
+                    <div class="init-loading list-group-item text-center" style="display: none;"></div>
+                    <div class="swiper-container2 swiper-container-horizontal">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide list-group swiper-slide-next chooseDate">
+                                <div id="demo">
+                                    <div id="ca"></div>
+                                </div>
+                                <div class="comment-btn">
+                                    <div class="comment-mask">
+                                        <div class="txt-color-white">
+                                            <p class="btn-title txt-size-big popBtn">
+                                                <span>园长评论</span>
+                                            </p>
+                                        </div>
+                                        <div class="weui-tab__bd">
+                                            <div class="weui-cells">
+                                                <a class="weui-cell weui-cell_access" href="javascript:;">
+                                                    <div class="weui-cell__bd g-details-txt">
+                                                        <p class="txt-title">幼儿园园</p>
+                                                        <p class="txt-content">王老师</p>
+                                                    </div>
+                                                    <div class=" txt-size-small">03-15 15:23</div>
+                                                </a>
+                                                <a class="weui-cell weui-cell_access" href="javascript:;">
+                                                    <div class="weui-cell__bd g-details-txt">
+                                                        <p class="txt-title">幼儿园园</p>
+                                                        <p class="txt-content">王老师</p>
+                                                    </div>
+                                                    <div class=" txt-size-small">03-15 15:23</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide list-group swiper-slide-active" style="width: 1920px;">
+
+                                <div class="weui-cells">
+                                    教学百科
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tabs contents -->
+        </div>
+    </div>
+    <!-- 首页内容 -->
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../../src/js/jquery-2.1.4.js"></script>
+<script src="../../src/js/jquery-weui.min.js"></script>
+<script src="../../src/js/fastclick.js"></script>
+<script src="../../src/js/swiper.js"></script>
+<script src="../../src/js/swiper.jquery.min.js"></script>
+
+<script src="../../src/js/calendar.js"></script>
+<!-- 基础库文件 -->
+
+<script>
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+
+    //tab页js代码
+    var mySwiper = new Swiper('.swiper-container',{
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        mousewheelControl: true,
+        freeMode: true,
+        autoHeight:true,
+        onTouchMove: function(swiper){
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+        },
+        onTouchEnd: function(swiper) {
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+        }
+    });
+    var mySwiper2 = new Swiper('.swiper-container2',{
+        onTransitionEnd: function(swiper){
+            $('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+            $('.swiper-container2 .swiper-slide-active').css('height','auto').siblings('.swiper-slide').css('height','0px');
+            mySwiper.update();
+            $('.tabs-title a').eq(mySwiper2.activeIndex).addClass('tabs-title-on').siblings('a').removeClass('tabs-title-on');
+        }
+
+    });
+
+    $('.tabs-title a').click(function(){
+        $(this).addClass('tabs-title-on').siblings('a').removeClass('tabs-title-on');
+        mySwiper2.slideTo($(this).index(), 500, false)
+        $('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+        $('.swiper-container2 .swiper-slide-active').css('height','auto').siblings('.swiper-slide').css('height','0px');
+        mySwiper.update();
+    });
+    //tab页js代码
+
+    $('.weui-cell').bind('click',function () {
+        $(this).parent().siblings().children('.lists-container').hide();
+        $(this).parent().children('.lists-container').toggle();
+    })
+
+    //date
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    //获取cookie
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1);
+            if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+        }
+        return "";
+    }
+
+
+    var date = new Date();
+    setCookie('now-date', date.getMonth());
+    var nowDate = getCookie('now-date');
+
+    $('.popBtn').bind('click', function () {
+        $('.comment-btn').toggleClass('popMask');
+    })
+
+
+    $('#ca').calendar({
+        width: 380,
+        height: 380,
+        data: [
+            {
+                date: '2015/12/24',
+                value: 'Christmas Eve'
+            },
+            {
+                date: '2015/12/25',
+                value: 'Merry Christmas'
+            },
+            {
+                date: '2018/03/01',
+                value: 'Happy New Year'
+            }
+        ],
+        onSelected: function (view, date, data) {
+            location.href = 'teachers-plansLists-details.html';
+        }
+    });
+
+</script>
+
+</body>
+</html>
