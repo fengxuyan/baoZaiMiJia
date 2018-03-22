@@ -33,7 +33,7 @@
 
         <!-- tabs contents -->
         <div class="swiper-container swiper-container-vertical swiper-container-free-mode">
-            <div class="swiper-wrapper w" style="height: 100% !important;">
+            <div class="swiper-wrapper w">
                 <div class="swiper-slide d swiper-slide-active">
                     <div class="init-loading list-group-item text-center" style="display: none;"></div>
                     <div class="swiper-container2 swiper-container-horizontal">
@@ -49,7 +49,7 @@
                                                 <span>园长评论</span>
                                             </p>
                                         </div>
-                                        <div class="weui-tab__bd">
+                                        <div class="weui-tab__bd comment-lists" style="display: none">
                                             <div class="weui-cells">
                                                 <a class="weui-cell weui-cell_access" href="javascript:;">
                                                     <div class="weui-cell__bd g-details-txt">
@@ -173,6 +173,8 @@
 
     $('.popBtn').bind('click', function () {
         $('.comment-btn').toggleClass('popMask');
+        $('.comment-lists').toggle();
+
     })
 
 

@@ -13,20 +13,79 @@
 
     <link rel="stylesheet" href="../../src/css/public.css">
     <link rel="stylesheet" href="home-school-interactive.css">
+
     <link rel="stylesheet prefetch"
           href="http://www.17sucai.com/preview/483666/2018-02-28/PhotoSwipe4.1.1Demo.rar/css/photoswipe.css">
+    <link rel="stylesheet prefetch"
+          href="http://www.17sucai.com/preview/483666/2018-02-28/PhotoSwipe4.1.1Demo.rar/css/default-skin/default-skin.css">
+
 
 </head>
+
 <body ontouchstart>
+<!-- 基础库文件 -->
+<script src="../../src/js/jquery-2.1.4.js"></script>
+<!--<script src="src/js/jquery-weui.min.js"></script>-->
+<script src="../../src/js/fastclick.js"></script>
+<!--<script src="src/js/swiper.js"></script>-->
+<!--<script src="src/js/swiper.jquery.min.js"></script>-->
+<!-- 基础库文件 -->
+
 <script>
+    //    javascript自动按比例显示图片，按比例压缩图片显示
+    function AutoResizeImage(maxWidth,maxHeight,objImg){
+        var img = new Image();
+        img.src = objImg.src;
+        var hRatio;
+        var wRatio;
+        var Ratio = 1;
+        var w = img.width;
+        var h = img.height;
+        wRatio = maxWidth / w;
+        hRatio = maxHeight / h;
 
 
-//    $(window).width()
+        var g_left;
+        if (maxWidth ==0 && maxHeight==0){
+            Ratio = 1;
+        }else if (maxWidth==0){//
+            if (hRatio<1) Ratio = hRatio;
+        }else if (maxHeight==0){
+            if (wRatio<1) Ratio = wRatio;
+        }else if (wRatio<1 || hRatio<1){
+            Ratio = (wRatio<=hRatio?wRatio:hRatio);
+        }
+        if (Ratio<1){
+            w = w * Ratio;
+            h = h * Ratio;
+        }
+        objImg.height = h;
+        objImg.width = w;
+
+        if($(window).width()>400){
+            g_left=($(window).width()-w*4)/2-4;
+            $('.imgLists-container').css('margin-left',g_left+'px');
+        }else{
+            g_left=($(window).width()-w*3)/2-3;
+            $('.imgLists-container').css('margin-left',g_left+'px');
+        }
+        $('.imgLists-container img').css('padding','0 2px 2px 0');
+
+    }
+
+    $(function () {
+        console.log(($(window).width())); //浏览器当前窗口可视区域宽度
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+
+
+
+    });
 
 </script>
 
 <div class="homeLife weui-tab">
-
+    <div class="mask"></div>
     <!-- 首页内容 -->
 
     <!-- lists contents -->
@@ -37,23 +96,111 @@
         </div>
     </div>
 
+
+
+
+
         <div class="content-container">
 
         <p class="txt-title">在家表现：</p>
         <p class="txt-content">niiekekkekekkeigje</p>
-        <div class="imgLists-container">
-            <img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
-            <img src="../../src/img/about-logo.png" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
-            <img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
-            <img src="../../src/img/ysgg.png" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
-            <img src="../../src/img/banner1.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
-            <img src="../../src/img/myself-background.png" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
-            <img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
+
+            <div class="imgLists-container my-gallery" data-pswp-uid="2">
+
+                <figure>
+                    <div class="thumbnail-box">
+                        <a href="../../src/img/head.jpg" data-size="286x220">
+                            <img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
+                        </a>
+                    </div>
+                </figure>
+                <figure>
+                    <div class="thumbnail-box">
+                        <a href="../../src/img/head.jpg" data-size="286x220">
+                            <img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
+
+                        </a>
+                    </div>
+                </figure>
+                <figure>
+                    <div class="thumbnail-box">
+                        <a href="../../src/img/head.jpg" data-size="286x220">
+                            <img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>
+
+                        </a>
+                    </div>
+                </figure>
+
+            </div>
+
+
+        <!--<div class="imgLists-container my-gallery">-->
+            <!--<img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>-->
+            <!--<img src="../../src/img/about-logo.png" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>-->
+            <!--<img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>-->
+            <!--<img src="../../src/img/ysgg.png" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>-->
+            <!--<img src="../../src/img/banner1.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>-->
+            <!--<img src="../../src/img/myself-background.png" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>-->
+            <!--<img src="../../src/img/head.jpg" border="0" width="0" height="0" onload="AutoResizeImage(400,138,this)"  alt="341 X 512"/>-->
+
+        <!--</div>-->
+
+    </div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="pswp__bg"></div>
+
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
 
         </div>
 
     </div>
-
 
 
     <div class="weui-cell">
@@ -77,64 +224,295 @@
 <!-- 首页内容 -->
 
 
+<script src="../../src/js/photoswipe.js"></script>
+<script src="../../src/js/photoswipe-ui-default.min.js"></script>
+<script type="text/javascript">
+    var initPhotoSwipeFromDOM = function (gallerySelector) {
 
-<!-- 基础库文件 -->
-<script src="../../src/js/jquery-2.1.4.js"></script>
-<!--<script src="src/js/jquery-weui.min.js"></script>-->
-<script src="../../src/js/fastclick.js"></script>
-<!--<script src="src/js/swiper.js"></script>-->
-<!--<script src="src/js/swiper.jquery.min.js"></script>-->
-<!-- 基础库文件 -->
-<script>
-//    javascript自动按比例显示图片，按比例压缩图片显示
-function AutoResizeImage(maxWidth,maxHeight,objImg){
-    var img = new Image();
-    img.src = objImg.src;
-    var hRatio;
-    var wRatio;
-    var Ratio = 1;
-    var w = img.width;
-    var h = img.height;
-    wRatio = maxWidth / w;
-    hRatio = maxHeight / h;
+        var parseThumbnailElements = function (el) {
+            var thumbElements = el.childNodes,
+                numNodes = thumbElements.length,
+                items = [],
+                figureEl,
+                linkEl,
+                size,
+                item,
+                divEl;
 
+            for (var i = 0; i < numNodes; i++) {
 
-    var g_left;
-    if (maxWidth ==0 && maxHeight==0){
-        Ratio = 1;
-    }else if (maxWidth==0){//
-        if (hRatio<1) Ratio = hRatio;
-    }else if (maxHeight==0){
-        if (wRatio<1) Ratio = wRatio;
-    }else if (wRatio<1 || hRatio<1){
-        Ratio = (wRatio<=hRatio?wRatio:hRatio);
-    }
-    if (Ratio<1){
-        w = w * Ratio;
-        h = h * Ratio;
-    }
-    objImg.height = h;
-    objImg.width = w;
+                figureEl = thumbElements[i]; // <figure> element
 
-    if($(window).width()>400){
-        g_left=($(window).width()-w*4)/2-4;
-        $('.imgLists-container').css('margin-left',g_left+'px');
-    }else{
-        g_left=($(window).width()-w*3)/2-3;
-        $('.imgLists-container').css('margin-left',g_left+'px');
-    }
-    $('.imgLists-container img').css('padding','0 2px 2px 0');
+                if (figureEl.nodeType !== 1) {
+                    continue;
+                }
+                divEl = figureEl.children[0];
+                linkEl = divEl.children[0]; // <a> element
 
-}
+                size = linkEl.getAttribute('data-size').split('x');
 
-    $(function () {
-        console.log(($(window).width())); //浏览器当前窗口可视区域宽度
-        // 解决ios端click事件300毫秒延迟
-        FastClick.attach(document.body);
+                item = {
+                    src: linkEl.getAttribute('href'),
+                    w: parseInt(size[0], 10),
+                    h: parseInt(size[1], 10)
+                };
 
 
+                if (figureEl.children.length > 1) {
+                    item.title = figureEl.children[1].innerHTML;
+                }
 
+                if (linkEl.children.length > 0) {
+                    item.msrc = linkEl.children[0].getAttribute('src');
+                }
+
+                item.el = figureEl;
+                items.push(item);
+            }
+
+            return items;
+        };
+
+        var closest = function closest(el, fn) {
+            return el && (fn(el) ? el : closest(el.parentNode, fn));
+        };
+
+        var onThumbnailsClick = function (e) {
+            e = e || window.event;
+            e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+            var eTarget = e.target || e.srcElement;
+
+            var clickedListItem = closest(eTarget, function (el) {
+                return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+            });
+
+            if (!clickedListItem) {
+                return;
+            }
+
+            var clickedGallery = clickedListItem.parentNode,
+                childNodes = clickedListItem.parentNode.childNodes,
+                numChildNodes = childNodes.length,
+                nodeIndex = 0,
+                index;
+
+            for (var i = 0; i < numChildNodes; i++) {
+                if (childNodes[i].nodeType !== 1) {
+                    continue;
+                }
+
+                if (childNodes[i] === clickedListItem) {
+                    index = nodeIndex;
+                    break;
+                }
+                nodeIndex++;
+            }
+
+
+            if (index >= 0) {
+                openPhotoSwipe(index, clickedGallery);
+            }
+            return false;
+        };
+
+        var photoswipeParseHash = function () {
+            var hash = window.location.hash.substring(1),
+                params = {};
+
+            if (hash.length < 5) {
+                return params;
+            }
+
+            var vars = hash.split('&');
+            for (var i = 0; i < vars.length; i++) {
+                if (!vars[i]) {
+                    continue;
+                }
+                var pair = vars[i].split('=');
+                if (pair.length < 2) {
+                    continue;
+                }
+                params[pair[0]] = pair[1];
+            }
+
+            if (params.gid) {
+                params.gid = parseInt(params.gid, 10);
+            }
+
+            return params;
+        };
+
+        var openPhotoSwipe = function (index, galleryElement, disableAnimation, fromURL) {
+            var pswpElement = document.querySelectorAll('.pswp')[0],
+                gallery,
+                options,
+                items;
+
+            items = parseThumbnailElements(galleryElement);
+
+            options = {
+                barsSize: {
+                    top: 100,
+                    bottom: 100
+                },
+                fullscreenEl: false,
+                shareButtons: [
+                    {id: 'wechat', label: '分享微信', url: '#'},
+                    {id: 'weibo', label: '新浪微博', url: '#'},
+                    {id: 'download', label: '保存图片', url: '{{raw_image_url}}', download: true}
+                ],
+
+                galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                getThumbBoundsFn: function (index) {
+                    var thumbnail = items[index].el.getElementsByTagName('img')[0],
+                        pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                        rect = thumbnail.getBoundingClientRect();
+
+                    return {x: rect.left, y: rect.top + pageYScroll, w: rect.width};
+                }
+
+            };
+
+            if (fromURL) {
+                if (options.galleryPIDs) {
+                    for (var j = 0; j < items.length; j++) {
+                        if (items[j].pid == index) {
+                            options.index = j;
+                            break;
+                        }
+                    }
+                } else {
+                    options.index = parseInt(index, 10) - 1;
+                }
+            } else {
+                options.index = parseInt(index, 10);
+            }
+
+            if (isNaN(options.index)) {
+                return;
+            }
+
+            if (disableAnimation) {
+                options.showAnimationDuration = 0;
+            }
+
+            gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+        };
+
+        var galleryElements = document.querySelectorAll(gallerySelector);
+
+        for (var i = 0, l = galleryElements.length; i < l; i++) {
+            galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+            galleryElements[i].onclick = onThumbnailsClick;
+        }
+
+        var hashData = photoswipeParseHash();
+        if (hashData.pid && hashData.gid) {
+            openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+        }
+    };
+
+    initPhotoSwipeFromDOM('.my-gallery');
+
+    $(".my-gallery>figure>div").each(function () {
+        $(this).height($(this).width());
     });
+
+    //如果文字太多折叠，点击显示全文
+    function more(obj, id) {
+        if ($('#txt' + id).is(":hidden")) {
+            $('#p' + id).hide();
+            $('#txt' + id).show();
+            obj.innerHTML = '收起';
+        } else {
+            $('#p' + id).show();
+            $('#txt' + id).hide();
+            obj.innerHTML = '全文';
+        }
+    }
+
+    //点赞和评论js
+
+    function hidemask() {
+        $(".fabulous-comment").hide(200);
+        $(".mask").hide();
+    }
+
+    $(".fr").click(function () {
+        $(".fabulous-comment").show(200);
+        $(".mask").show();
+    });
+    $(".mask").click(function () {
+        hidemask();
+    });
+
+    var fabulous_flag = true;
+
+    $(".fabulous").click(function (event) {
+
+        if(fabulous_flag){
+            $(".fabulous .zan").text("取消");
+            $(".fav .change-color").append("<span>,小池</span>")
+            fabulous_flag = false;
+        }else{
+            $(".fabulous .zan").text("赞");
+            $(".fav .change-color span").eq(-1).remove();
+            fabulous_flag = true;
+        }
+
+        hidemask();
+        event.stopPropagation();
+    });
+    $(".comment").click(function (event) {
+        $(".comment-container").css('visibility','visible');
+        $("#form_article").click();
+        hidemask();
+        event.stopPropagation();
+    });
+
+    $(function(){
+        var say = '说点什么...';
+        if ($("#form_article").html() === "") {
+            $("#form_article").html(say);
+        }
+        $("#form_article").blur(function(){
+            if ($("#form_article").html() === "") {
+                $("#form_article").html(say);
+            }
+        })
+        $("#form_article").focus(function(){
+            $("#biaoqing img").attr('src','src/xiaolian.svg');
+            $("#page_emotion").css('visibility','hidden');
+        })
+
+        $("#form_article").click(function(){
+            if($("#form_article").html() == say){
+                $("#form_article").html("");
+            }
+        });
+        $("#page_emotion  dd").click(function(){
+            $("#form_article").html( $("#form_article").html().replace(say, '') );
+        });
+
+        var emj_flag = true;
+        $("#biaoqing").click(function(){
+            if(emj_flag){
+                $("#biaoqing img").attr('src','src/jianpan.svg');
+                $("#page_emotion").css('visibility','visible');
+                emj_flag = false;
+            }else{
+                $("#biaoqing img").attr('src','src/xiaolian.svg');
+                emj_flag = true;
+                $("#page_emotion").css('visibility','hidden');
+            }
+
+
+        });
+    });
+
 
 </script>
 
