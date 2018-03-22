@@ -1,0 +1,302 @@
+/*center-management.html*/
+.centerManage .tabs-title {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #F78C3C;
+}
+
+.centerManage .tabs-title .tabs-title-on {
+    border-bottom: 2px solid #F78C3C;
+}
+.centerManage .weui-cells{
+    margin-top: 0;
+}
+.centerManage .swiper-container, .swiper-container2 {
+    height: 100%;
+}
+.centerManage .weui-grid {
+    /* position: relative; */
+    float: left;
+    padding: 0;
+    width:auto;
+}
+.centerManage .weui-cell__hd img{
+    border-radius: 50%;
+}
+.centerManage .weui-grid:before, .weui-grids:after,.weui-grid:after,.weui-grids:before{
+    border:0 ;
+}
+.centerManage .weui-cell{
+    border-bottom:1px solid #e5e5e5;
+}
+.centerManage .weui-grid__icon {
+    width:1.5rem;
+    height:1.5rem;
+}
+.centerManage .weui-cell__bd{
+    padding-left: 0.5rem;
+}
+.lists-container{
+    display: none;
+    overflow: hidden;
+    padding: 0.3rem 0;
+    text-align: center;
+    border-bottom:1px solid #e5e5e5;
+}
+.img-box{
+    display: inline-block;
+    width:2.5rem;
+    height:2.5rem;
+}
+.lists-container .lists-box{
+    float:left;
+    width:33%;
+}
+.centerManage .img-box img{
+    border-radius: 50%;
+    width:100%;
+    height:100%;
+}
+.centerManage .txt-title-darkblack{
+    padding: 0 0 0.5rem  0;
+}
+.txt-history{
+    /*padding:0.3rem 0.5rem;*/
+    margin-top: 1rem;
+    color:rgb(231, 145, 76);
+}
+.centerManage .weui-cell:before{
+    border:0;
+}
+/*centerManage-rosterdetails.html*/
+
+.weui-grid:before, .weui-grids:after, .weui-grid:after, .weui-grids:before {
+    border: 0;
+}
+
+.rosterdetails .weui-cell__hd img {
+    border-radius: 50%;
+}
+
+.rosterdetails .weui-grid__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.rosterdetails .weui-cell:before {
+    border-top: 0;
+}
+
+.rosterdetails .weui-cell {
+    display: block;
+    overflow: hidden;
+}
+
+.rosterdetails .weui-grids {
+    float: left;
+    padding: 0;
+    width: auto;
+}
+
+.rosterdetails .pingjia-pos {
+    padding-left: 0.5rem;
+}
+
+.rosterdetails .performance-box {
+    display: block;
+    border-top: 1px solid #ddd;
+}
+
+.rosterdetails .txt-size-medium {
+    text-align: center;
+}
+
+.rosterdetails .view-btn ,.signInLists .view-btn{
+    margin: 0 auto;
+    padding: 0.3rem 1rem;
+    width: 50%;
+    background: rgb(231, 145, 76);;
+    text-align: center;
+    line-height: 1rem;
+}
+/*student-course-details.html*/
+.weui-cells:before, .weui-cells:after{
+    border: 0;
+}
+
+.weui-cells:after, .weui-cells:before{
+    height:0;
+}
+.courseDetails .tabs-title {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #F78C3C;
+}
+
+.courseDetails .tabs-title .tabs-title-on {
+    border-bottom: 2px solid #F78C3C;
+}
+.courseDetails .weui-cells{
+    margin-top: 0;
+    padding: 0.5rem;
+}
+.swiper-container, .swiper-container2 {
+    height: 100%;
+}
+
+.courseDetails .weui-cell__hd img{
+    border-radius: 50%;
+}
+
+.courseDetails .img-box img{
+    border-radius: 50%;
+    width:100%;
+    height:100%;
+}
+
+/*student-signIn-lists.html*/
+.weui-cells{
+    margin-top: 0;
+}
+.signInLists .weui-cells:after{
+    border:0;
+}
+.signInLists .list-item{
+    border-bottom:1px solid #e5e5e5 ;
+}
+.signInListsBox{
+    position: relative;
+}
+.courseTime{
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+}
+.icons-container{
+    display: block;
+}
+.icons-container img{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 50%;
+}
+.signInLists .lists-container{
+    padding:0;
+    /*border:0;*/
+}
+
+.signInLists .lists-box{
+    position: relative;
+    margin: 0 0.1rem 0.1rem 0.1rem;
+    padding: 0.5rem 0;
+    width:32%;
+}
+.signInLists .lists-title{
+    overflow: hidden;
+    padding: 0.7rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.signInLists .selectTxt{
+    color:#3478F7;
+
+}
+.selectIcon{
+    position: absolute;
+    z-index: 3;
+    bottom:0.2rem;
+    right:0.2rem;
+    width:1rem;
+    height:1rem;
+}
+.selectIcon .icon{
+    width:100%;
+    height:100%;
+}
+.selectedBackground {
+    background: rgba(245,245,245,0.5);
+}
+.cannotSelect{
+    background: rgba(176, 176, 176, 0.3);
+}
+
+
+.signInLists .view-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+/*students-leaveLogs.html*/
+
+
+/*students-leaveLogs-details.html*/
+.icons-box{
+    display: inline-block;
+    width:1rem;
+    height:1rem;
+}
+.icons-box img{
+    width:100%;
+    height:100%;
+}
+.details-container{
+    padding:0 1rem;
+}
+.leaveLogsDetails .details-item{
+    display: flex;
+    align-items: center;
+    padding:0.5rem 0;
+    border-bottom:1px solid #e5e5e5;
+}
+.content-box{
+    padding-left: 1rem;
+}
+
+.leaveLogsDetails .txt-content{
+    font-size: 0.7rem;
+}
+
+.leaveLogsDetails .details-container{
+    padding:0 0.5rem;
+}
+/*signIn-history.html*/
+.teacherRosterDetails .weui-cell__hd img {
+    border-radius: 50%;
+}
+
+.teacherRosterDetails .weui-grid__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.teacherRosterDetails .weui-cell:before {
+    border-top: 0;
+}
+
+.teacherRosterDetails .weui-cell {
+    display: block;
+    overflow: hidden;
+}
+
+.teacherRosterDetails .weui-grids {
+    float: left;
+    padding: 0;
+    width: auto;
+}
+
+.teacherRosterDetails .pingjia-pos {
+    padding-left: 0.5rem;
+}
+
+.teacherRosterDetails .performance-box {
+    display: block;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.teacherRosterDetails .txt-size-medium {
+    text-align: center;
+}
