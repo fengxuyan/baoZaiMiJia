@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在校表现</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../../src/css/weui.min.css">
+    <link rel="stylesheet" href="../../src/css/jquery-weui.css">
+    <link rel="stylesheet" href="../../src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../../src/css/public.css">
+    <link rel="stylesheet" href="home-school-interactive.css">
+</head>
+<body ontouchstart>
+
+<div class="addPerformance weui-tab">
+
+    <!-- 首页内容 -->
+
+    <!-- lists contents -->
+    <div class="weui-cells add-container">
+        <div class="students-lists weui-cell__hd weui-grids">
+            <a href="" class="weui-grid js_grid">
+                <div class="weui-grid__icon">
+                    <img src="../../src/img/head.jpg">
+                </div>
+                <p class="weui-grid__label">
+                    Button
+                </p>
+            </a>
+        </div>
+
+        <div class="students-lists weui-cell__hd weui-grids">
+            <a href="" class="weui-grid js_grid">
+                <div class="weui-grid__icon">
+                    <img src="../../src/img/head.jpg">
+                </div>
+                <p class="weui-grid__label">
+                    Button
+                </p>
+            </a>
+        </div>
+        <div class="students-lists weui-cell__hd weui-grids">
+            <a href="" class="weui-grid js_grid">
+                <div class="weui-grid__icon">
+                    <img src="../../src/img/head.jpg">
+                </div>
+                <p class="weui-grid__label">
+                    Button
+                </p>
+            </a>
+        </div>
+        <div class="students-lists weui-cell__hd weui-grids">
+            <a href="" class="weui-grid js_grid">
+                <div class="weui-grid__icon">
+                    <img src="../../src/img/head.jpg">
+                </div>
+                <p class="weui-grid__label">
+                    Button
+                </p>
+            </a>
+        </div>
+        <div class="students-lists weui-cell__hd weui-grids">
+            <a href="" class="weui-grid js_grid">
+                <div class="weui-grid__icon">
+                    <img src="../../src/img/head.jpg">
+                </div>
+                <p class="weui-grid__label">
+                    Button
+                </p>
+            </a>
+        </div>
+        <div class="students-lists weui-cell__hd weui-grids">
+            <a href="" class="weui-grid js_grid">
+                <div class="weui-grid__icon">
+                    <img src="../../src/img/head.jpg">
+                </div>
+                <p class="weui-grid__label">
+                    Button
+                </p>
+            </a>
+        </div><div class="students-lists weui-cell__hd weui-grids">
+        <a href="" class="weui-grid js_grid">
+            <div class="weui-grid__icon">
+                <img src="../../src/img/head.jpg">
+            </div>
+            <p class="weui-grid__label">
+                Button
+            </p>
+        </a>
+    </div>
+
+
+    </div>
+
+
+
+    <div class="weui-cell performance-box">
+        <p class="txt-orange-title">课堂表现</p>
+        <div class="feedback-container">
+            <textarea rows="10" cols="10" class="txt-title" placeholder="请输入该学生的课堂表现(1-100字)" ></textarea>
+        </div>
+    </div>
+    <div class="weui-cell performance-box">
+        <p class="txt-orange-title">课后延伸</p>
+        <div class="feedback-container">
+            <textarea rows="10" cols="10" class="txt-title" placeholder="请输入课堂延伸(1-100字)" ></textarea>
+        </div>
+    </div>
+    <div class="weui-cell performance-box">
+        <p class="txt-orange-title">老师对你说：</p>
+        <div class="feedback-container">
+            <textarea rows="10" cols="10" class="txt-title" placeholder="请输入你想对家长说的话(1-100字)" ></textarea>
+        </div>
+    </div>
+    <div class="weui-cell picDiv">
+        <div class="addImages">
+            <!--multiple属性可选择多个图片上传-->
+            <input type="file" class="file" id="fileInput" multiple accept="image/png, image/jpeg, image/gif, image/jpg" />
+            <div class="text-detail">
+                <span>+</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- 首页内容 -->
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../../src/js/jquery-2.1.4.js"></script>
+<!--<script src="src/js/jquery-weui.min.js"></script>-->
+<script src="../../src/js/fastclick.js"></script>
+<!--<script src="src/js/swiper.js"></script>-->
+<!--<script src="src/js/swiper.jquery.min.js"></script>-->
+<!-- 基础库文件 -->
+<script>
+
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+    $(".file").change(function () {
+        //获取选择图片的对象
+        var docObj = $(this)[0];
+        var picDiv = $(this).parents(".picDiv");
+        //得到所有的图片文件
+        var fileList = docObj.files;
+        for (var i = 0; i < fileList.length; i++) {
+            var fr = new FileReader();
+            var single = fileList[i];
+            fr.onload = function (single) {
+                var picHtml = "<div class='imageDiv' > <img id='img" + single.name + "' src='" + single.target.result + "' /> <div class='cover'><i class='delbtn'>删除</i></div></div>"
+                picDiv.prepend(picHtml);
+                var imgObjPreview = document.getElementById("img" + single.name);
+                //图片属性
+                imgObjPreview.style.display = 'block';
+                imgObjPreview.style.width = '2.5rem';
+                imgObjPreview.style.height = '2.5rem';
+            };
+            fr.readAsDataURL(single);
+        }
+    });
+    /*删除功能*/
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
