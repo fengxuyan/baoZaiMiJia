@@ -1,0 +1,72 @@
+/*zaojiao-teacher-assistant.html*/
+.tabs-title {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #F78C3C;
+}
+.tabs-title .tabs-title-on {
+    border-bottom: 2px solid #F78C3C;
+}
+.list-group-item{
+    float: left;
+    width: 94%;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.list-group-item.txt-align{
+    display: flex;
+    align-items: center;
+}
+.list-group-item dl{
+    float: left;
+}
+.list-group-item .img{
+    width: 30%;
+    margin-right: 6px;
+}
+.list-group-item .img img{
+    width: 100%;
+}
+.list-group-item .details{
+    width: 65%;
+}
+.list-group-item p.con{
+    float: left;
+    width: 90%;
+}
+.list-group-item p.arrow{
+    float: left;
+    width: 10%;
+}
+.list-group-item p.arrow img{
+    vertical-align: middle;
+}
+.dateinput-container{
+    padding:0.3rem 0;
+}
+.weui-input.g-dateinput{
+    text-align: center;
+}
+.time-container{
+}
+
+.time-container .time-box{
+    border:1px solid orange;
+
+    margin:0.3rem 0.2rem ;
+    background: #eee;
+
+}
+.details-container{
+
+}
+.details-container .details-box{
+    border:1px solid yellow;
+    margin:0.3rem 0 ;
+    background: #eee;
+
+
+
+}

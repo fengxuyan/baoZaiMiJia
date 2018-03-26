@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中心动态</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../../src/css/weui.min.css">
+    <link rel="stylesheet" href="../../src/css/jquery-weui.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../../src/css/public.css">
+    <link rel="stylesheet" href="zaojiao-teacher-assistant.css">
+</head>
+<body ontouchstart>
+
+<div class="weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+
+        <!-- tabs -->
+        <div class="weui-flex tabs-title">
+            <a class="weui-flex__item txt-title tabs-title-on">教学计划</a>
+            <a class="weui-flex__item txt-title">教学百科</a>
+        </div>
+
+        <!-- tabs -->
+
+        <!-- tabs contents -->
+        <div class="swiper-container swiper-container-vertical swiper-container-free-mode swiper-container-content">
+            <div class="swiper-wrapper w">
+                <div class="swiper-slide d swiper-slide-active">
+                    <div class="init-loading list-group-item text-center" style="display: none;"></div>
+                    <div class="swiper-container2 swiper-container-horizontal">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide list-group swiper-slide-active">
+                                <div class="weui-flex dateinput-container">
+                                    <div class="weui-flex__item">
+                                        <input class="weui-input g-dateinput" id="time-format" type="text">
+                                    </div>
+                                    <div class="weui-flex__item">
+                                        <input class="weui-input g-dateinput" type="text" id='picker'/>
+                                    </div>
+                                </div>
+                                <div class="weui-flex">
+                                    <div class="weui-flex__item">
+                                        <div class="g-left-lists">
+                                            <ul class="time-container">
+                                                <li class="time-box" data-time="03-26-01">
+                                                    <p>03-26</p>
+                                                    <p>星期一</p>
+                                                </li>
+                                                <li class="time-box">
+                                                    <p>03-27</p>
+                                                    <p>星期二</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="weui-flex__item">
+                                        <div class="g-right-lists">
+                                            <ul class="details-container">
+                                                <li class="details-box">
+                                                    <p>15:00-17:00</p>
+                                                    <p>语文班</p>
+                                                </li>
+                                                <li class="details-box">
+                                                    <p>15:00-17:00</p>
+                                                    <p>语文班</p>
+                                                </li>
+                                                <li class="details-box">
+                                                    <p>15:00-17:00</p>
+                                                    <p>语文班</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide list-group swiper-slide-next">
+                                <div class="weui-cells">
+                                    <a class="weui-cell weui-cell_access" href="encyclopedia-details.html">
+                                        <div class="weui-cell__bd">
+                                            <p class="txt-title">百科1</p>
+                                        </div>
+                                        <div class="weui-cell__ft txt-size-small"></div>
+                                    </a>
+                                    <a class="weui-cell weui-cell_access" href="encyclopedia-details.html">
+                                        <div class="weui-cell__bd">
+                                            <p class="txt-title">百科2</p>
+                                        </div>
+                                        <div class="weui-cell__ft txt-size-small"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tabs contents -->
+
+        </div>
+        <!-- 首页内容 -->
+
+    </div>
+
+</div>
+<!-- 基础库文件 -->
+<script src="../../src/js/jquery-2.1.4.js"></script>
+<script src="../../src/js/jquery-weui.js"></script>
+<script src="../../src/js/fastclick.js"></script>
+<script src="../../src/js/swiper.js"></script>
+<!-- 基础库文件 -->
+<script>
+
+    $('.time-box').bind('click',function (event) {
+        console.log(event.target);
+//        $('.g-right-lists').toggle();
+    })
+
+
+
+
+    $("#time-format").attr('placeholder', '2019年04月');
+    $("#picker").attr('placeholder', '第一周');
+    $("#time-format").datetimePicker({
+        title: '请选择 年 月 ',
+        yearSplit: '年',
+        monthSplit: '月',
+        times: function () {
+            return [  // 自定义的时间
+            ];
+        },
+        onChange: function (picker, values, displayValues) {
+            console.log(values); //["2018", "06"]
+            $("#time-format").val(values);
+
+            console.log('displayValues==='+displayValues);//displayValues===2018,07
+        }
+    });
+
+
+    $("#picker").picker({
+        title: "请选择第几周",
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['第一周', '第二周', '第三周', '第四周', '第五周']
+            }
+        ]
+    });
+
+</script>
+<script>
+
+    $(function () {
+
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+
+    });
+
+    //tab页js代码
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        mousewheelControl: true,
+        freeMode: true,
+        onTouchMove: function (swiper) {
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+        },
+        onTouchEnd: function (swiper) {
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+        }
+    });
+    var mySwiper2 = new Swiper('.swiper-container2', {
+        onTransitionEnd: function (swiper) {
+            $('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+            $('.swiper-container2 .swiper-slide-active').css('height', 'auto').siblings('.swiper-slide').css('height', '0px');
+            mySwiper.update();
+            $('.tabs-title a').eq(mySwiper2.activeIndex).addClass('tabs-title-on').siblings('a').removeClass('tabs-title-on');
+        }
+
+    });
+
+    $('.tabs-title a').click(function () {
+        $(this).addClass('tabs-title-on').siblings('a').removeClass('tabs-title-on');
+        mySwiper2.slideTo($(this).index(), 500, false)
+        $('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+        $('.swiper-container2 .swiper-slide-active').css('height', 'auto').siblings('.swiper-slide').css('height', '0px');
+        mySwiper.update();
+    });
+    //tab页js代码
+
+</script>
+
+</body>
+</html>
