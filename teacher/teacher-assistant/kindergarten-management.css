@@ -349,12 +349,19 @@
     margin-top: 2rem;
     text-align: center;
     font-weight: normal;
-    color:rgb(230, 128, 55);;
+    color:rgb(230, 128, 55);
 
 }
 .weui-cells{
     margin-top: 0;
 }
 #ca{
-    margin:0 auto;
+    margin: 0 auto;
+}
+
+.modification-btn{
+    height: 38px;
+    border-bottom: 1px solid #eeeeee;
+    text-align: right;
+    margin: 5px 5px 0 0;
 }

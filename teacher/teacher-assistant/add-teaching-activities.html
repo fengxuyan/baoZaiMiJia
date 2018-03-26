@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>班级管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- 基础库文件 -->
+    <link rel="stylesheet" href="../../src/css/weui.min.css">
+    <link rel="stylesheet" href="../../src/css/jquery-weui.css">
+    <link rel="stylesheet" href="../../src/css/calendar.css">
+    <link rel="stylesheet" href="../../src/css/swiper-3.3.1.min.css">
+    <!-- 基础库文件 -->
+
+    <link rel="stylesheet" href="../../src/css/public.css">
+    <link rel="stylesheet" href="teacher-center-management.css">
+    <link rel="stylesheet" href="kindergarten-management.css">
+
+</head>
+<body ontouchstart>
+
+<div class="centerManage weui-tab">
+
+    <!-- 首页内容 -->
+    <div class="weui-tab__bd">
+
+        <form action="">
+            <div class="form-container">
+
+                <!-- 头部 -->
+                <div class="weui-cells weui-cells-bg">
+                    <div class="weui-cell weui-cell_select weui-cell_select-after">
+                        <div class="weui-cell__hd">
+                            <label for="" class="weui-label">班级名称</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <select class="weui-select" name="select2" id="selectt">
+                                <option value="1"></option>
+                                <option value="2">语文班</option>
+                                <option value="3">数学班</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label for="" class="weui-label">活动日期</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="date" value="">
+                    </div>
+                </div>
+                <!-- 头部 -->
+
+                <!-- 教学活动 -->
+                <div class="add-content">
+
+                    <div class="add-container">
+                        <div class="add-teaching-activities">
+
+                            <p class="active-title">教学活动</p>
+
+                            <div class="weui-cells">
+                                <div class="weui-cell weui-cell_select weui-cell_select-after">
+                                    <div class="weui-cell__hd">
+                                        <label for="" class="weui-label">课程名称</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <select class="weui-select" name="select2">
+                                            <option value="1"></option>
+                                            <option value="2">语文</option>
+                                            <option value="3">数学</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="weui-cell">
+                                <div class="weui-cell__hd clear-left"><label for="" class="weui-label">开始时间</label></div>
+                                <div class="weui-cell__bd">
+                                    <input class="weui-input" type="date" value="">
+                                </div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__hd clear-left"><label for="" class="weui-label">结束时间</label></div>
+                                <div class="weui-cell__bd">
+                                    <input class="weui-input" type="date" value="">
+                                </div>
+                            </div>
+                            <div class="weui-cells">
+                                <div class="weui-cell weui-cell_select weui-cell_select-after">
+                                    <div class="weui-cell__hd">
+                                        <label for="" class="weui-label">活动类型</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <select class="weui-select" name="select2">
+                                            <option value="1"></option>
+                                            <option value="2">教学活动</option>
+                                            <option value="3">户外活动</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="active-title active-title-top">活动详情</p>
+                            <div class="weui-cells weui-cells_form">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd clear-left">
+                                        <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+                                        <div class="weui-textarea-counter"><span>0</span>/200</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 教学活动 -->
+
+                <!-- 删除添加按钮 -->
+                <div class="weui-flex two-btn">
+                    <div class="weui-flex__item two-btn-right" onclick="addcontinue()">
+                        <a href="javascript:;" class="weui-btn weui-btn_primary">继续添加</a>
+                    </div>
+                    <div class="weui-flex__item" onclick="deleteActive()">
+                        <a href="javascript:;" class="weui-btn weui-btn_warn">删除</a>
+                    </div>
+                </div>
+                <!-- 删除添加按钮 -->
+
+            </div>
+        </form>
+
+    </div>
+    <!-- 首页内容 -->
+</div>
+
+
+<!-- 基础库文件 -->
+<script src="../../src/js/jquery-2.1.4.js"></script>
+<script src="../../src/js/jquery-weui.min.js"></script>
+<script src="../../src/js/fastclick.js"></script>
+<script src="../../src/js/swiper.js"></script>
+<script src="../../src/js/swiper.jquery.min.js"></script>
+
+<script src="../../src/js/calendar.js"></script>
+<!-- 基础库文件 -->
+
+<script>
+    $(function () {
+        // 解决ios端click事件300毫秒延迟
+        FastClick.attach(document.body);
+    });
+
+    /*
+    function judgeVal(){
+        var selectVal = $('select option:selected').html();
+        if(selectVal == ""){
+            $.toptip('请填完后继续添加', 'error');
+            return false;
+        }
+        return true;
+    }*/
+
+    function addcontinue(){
+
+            $(".add-content").append($('.add-container').html());
+
+    }
+
+    function deleteActive(){
+
+        var _length = $('.add-teaching-activities').length;
+
+        if(_length == 1){
+            $.toptip('禁止删除最后一条', 'error');
+        }else{
+            $('.add-teaching-activities:last').remove();
+        }
+
+    }
+
+</script>
+
+</body>
+</html>

@@ -300,3 +300,34 @@
 .teacherRosterDetails .txt-size-medium {
     text-align: center;
 }
+
+.form-container{
+    height: 100%;
+    background: #F7F5F6;
+    padding: 10px;
+}
+.weui-cells-bg{
+    background: #F7F5F6;
+}
+.add-teaching-activities{
+    margin-top: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.clear-left{
+    padding-left: 0 !important;
+}
+.add-teaching-activities .active-title{
+    padding-left: 15px;
+}
+.two-btn{
+    margin: 10px;
+}
+.two-btn .two-btn-right{
+    margin-right: 10px;
+}
+.active-title-top{
+    margin-top: 8px;
+}
